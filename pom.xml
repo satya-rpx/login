@@ -13,6 +13,13 @@
             </resource>
             <resource>
                 <filtering>true</filtering>
+                <directory>services/EmailService/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
                 <directory>services/securityService/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
@@ -145,6 +152,7 @@
                         </goals>
                         <configuration>
                             <sources>
+                                <source>services/EmailService/src</source>
                                 <source>services/securityService/src</source>
                             </sources>
                         </configuration>
@@ -360,6 +368,46 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>3.1.0</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>1.5.6</version>
+        </dependency>
+        <dependency>
+            <groupId>jtransc-rt-0.1.5</groupId>
+            <artifactId>jtransc-rt-0.1.5</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.lib.directory}/jtransc-rt-0.1.5.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>jtransc-rt-core-0.1.5</groupId>
+            <artifactId>jtransc-rt-core-0.1.5</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.lib.directory}/jtransc-rt-core-0.1.5.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>kotlin-reflect-1.0.1</groupId>
+            <artifactId>kotlin-reflect-1.0.1</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.lib.directory}/kotlin-reflect-1.0.1.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>kotlin-runtime-1.0.1</groupId>
+            <artifactId>kotlin-runtime-1.0.1</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.lib.directory}/kotlin-runtime-1.0.1.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>kotlin-stdlib-1.0.1</groupId>
+            <artifactId>kotlin-stdlib-1.0.1</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.lib.directory}/kotlin-stdlib-1.0.1.jar</systemPath>
         </dependency>
     </dependencies>
     <dependencyManagement>

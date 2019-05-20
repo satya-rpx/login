@@ -1,11 +1,29 @@
 <wm-page name="mainpage" pagetitle="Main">
-    <wm-header content="header" name="header" height="auto"></wm-header>
-    <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
+    <wm-header content="header" name="header1"></wm-header>
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav>
     <wm-content name="content">
-        <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
-        <wm-page-content columnwidth="8" paddingleft="15" paddingright="15" name="mainContent">
+        <wm-page-content columnwidth="12" name="mainContent" padding="30px 15px unset 15px">
+            <wm-composite name="composite1" margin="40px unset unset unset">
+                <wm-label class="col-md-3 control-label" name="label1" caption="UserName :" fontweight="bold" width="120" height="40" fontsize="17"></wm-label>
+                <wm-container class="col-md-9" name="container1">
+                    <wm-text name="username" width="350" height="40" placeholder="" autocomplete="false"></wm-text>
+                </wm-container>
+            </wm-composite>
+            <wm-composite name="composite4">
+                <wm-label class="col-md-3 control-label" caption="Email :" fontweight="bold" width="120" height="40" fontsize="17" name="label6"></wm-label>
+                <wm-container class="col-md-9" name="container4">
+                    <wm-text width="350" height="40" name="email" placeholder="" autocomplete="false"></wm-text>
+                </wm-container>
+            </wm-composite>
+            <wm-composite name="composite5">
+                <wm-label class="col-md-3 control-label" caption="Phone :" fontweight="bold" width="120" height="40" fontsize="17" name="label8"></wm-label>
+                <wm-container class="col-md-9" name="container5">
+                    <wm-text width="350" height="40" name="phone" placeholder="" autocomplete="false"></wm-text>
+                </wm-container>
+            </wm-composite>
+            <wm-button class="btn-default" caption="Create Account" type="button" margin="2em 0.5em unset 18em" name="button1" on-click="Variables.sendmail.invoke();button1Click($event, widget)" backgroundcolor="#a1e876" bordercolor="#a1e876" fontweight="bold"
+                height="40"></wm-button>
         </wm-page-content>
-        <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
     </wm-content>
-    <wm-footer name="footer" content="footer"></wm-footer>
+    <wm-footer content="footer" name="footer1"></wm-footer>
 </wm-page>

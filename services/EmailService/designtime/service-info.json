@@ -1,0 +1,7 @@
+{
+  "id" : "EmailService",
+  "type" : "JavaService",
+  "packageNames" : [ "com.login.emailservice" ],
+  "serviceClassNames" : [ "com.login.emailservice.EmailService" ],
+  "title" : "EmailService"
+}

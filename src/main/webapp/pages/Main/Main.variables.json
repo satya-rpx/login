@@ -1,1 +1,32 @@
-{ }
+{
+  "sendmail" : {
+    "_id" : "wm-sendmail-wm.ServiceVariable-1558341804587",
+    "name" : "sendmail",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "toEmailAddress",
+      "value" : "bind:Widgets.email.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "username",
+      "value" : "bind:Widgets.username.datavalue",
+      "type" : "string"
+    } ],
+    "type" : "object",
+    "service" : "EmailService",
+    "operation" : "sendEmail",
+    "operationId" : "EmailController_sendEmail",
+    "operationType" : "get",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "Email"
+  }
+}

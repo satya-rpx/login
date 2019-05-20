@@ -1,0 +1,58 @@
+{
+  "description" : null,
+  "methods" : {
+    "init" : [ {
+      "url" : {
+        "value" : "/init",
+        "modified" : false
+      },
+      "method" : {
+        "value" : "GET",
+        "modified" : false
+      },
+      "accessSpecifier" : "APP_ONLY",
+      "parameters" : { }
+    } ],
+    "sendEmail" : [ {
+      "url" : {
+        "value" : "/sendEmail",
+        "modified" : false
+      },
+      "method" : {
+        "value" : "GET",
+        "modified" : false
+      },
+      "accessSpecifier" : "APP_ONLY",
+      "parameters" : {
+        "toEmailAddress" : {
+          "name" : {
+            "value" : "toEmailAddress",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "QUERY",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        },
+        "username" : {
+          "name" : {
+            "value" : "username",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "QUERY",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        }
+      }
+    } ]
+  }
+}
