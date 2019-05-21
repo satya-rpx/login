@@ -19,16 +19,20 @@
   "type" : "HEADER",
   "params" : [ ]
 }, {
-  "name" : "index",
-  "type" : "PAGE",
-  "params" : [ ]
-}, {
   "name" : "leftnav",
   "type" : "LEFTNAV",
   "params" : [ ]
 }, {
   "name" : "rightnav",
   "type" : "RIGHTNAV",
+  "params" : [ ]
+}, {
+  "name" : "signup",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "signup_page",
+  "type" : "PAGE",
   "params" : [ ]
 }, {
   "name" : "topnav",

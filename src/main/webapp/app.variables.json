@@ -15,17 +15,6 @@
     } ],
     "operation" : "toast"
   },
-  "goToPage_index" : {
-    "_id" : "wm-goToPage_index-wm.NavigationVariable-1558369183113",
-    "name" : "goToPage_index",
-    "owner" : "App",
-    "category" : "wm.NavigationVariable",
-    "dataBinding" : [ ],
-    "operation" : "gotoPage",
-    "pageName" : "index",
-    "dataSet" : [ ],
-    "pageTransitions" : "none"
-  },
   "goToPage_Main" : {
     "_id" : "wm-wm.NavigationVariable1389180517517",
     "name" : "goToPage_Main",
@@ -33,6 +22,28 @@
     "category" : "wm.NavigationVariable",
     "operation" : "gotoPage",
     "pageName" : "Main"
+  },
+  "goToPage_signup" : {
+    "_id" : "wm-goToPage_signup-wm.NavigationVariable-1558421350905",
+    "name" : "goToPage_signup",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "signup",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_signup_page" : {
+    "_id" : "wm-goToPage_signup_page-wm.NavigationVariable-1558418836209",
+    "name" : "goToPage_signup_page",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "signup_page",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
   },
   "supportedLocale" : {
     "_id" : "wm-wm.Variable1402640443182",

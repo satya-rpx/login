@@ -1,0 +1,12 @@
+{
+  "cascadeEnabled" : false,
+  "dataLockingOptions" : {
+    "versionColumnName" : "VERSION",
+    "lockingStrategy" : "NONE"
+  },
+  "description" : "dbloan",
+  "draft" : false,
+  "name" : "dbloan",
+  "packageName" : "com.login.dbloan",
+  "tables" : [ ]
+}

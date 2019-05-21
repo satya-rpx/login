@@ -20,6 +20,13 @@
             </resource>
             <resource>
                 <filtering>true</filtering>
+                <directory>services/dbloan/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
                 <directory>services/securityService/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
@@ -153,6 +160,7 @@
                         <configuration>
                             <sources>
                                 <source>services/EmailService/src</source>
+                                <source>services/dbloan/src</source>
                                 <source>services/securityService/src</source>
                             </sources>
                         </configuration>
@@ -373,6 +381,11 @@
             <groupId>com.sun.mail</groupId>
             <artifactId>javax.mail</artifactId>
             <version>1.5.6</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.47</version>
         </dependency>
         <dependency>
             <groupId>jtransc-rt-0.1.5</groupId>
