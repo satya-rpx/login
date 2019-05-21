@@ -9,12 +9,9 @@
   "dbType" : "MySQL",
   "host" : "{WM_CLOUD_MYSQL_HOST}",
   "dbName" : "dbloan",
-  "port" : "",
+  "port" : null,
   "schemaName" : null,
-  "tableFilter" : [ {
-    "table" : "TABLE1",
-    "schema" : null
-  } ],
+  "tableFilter" : [ ],
   "schemaFilter" : [ ],
   "impersonateUser" : false,
   "activeDirectoryDomain" : null,
