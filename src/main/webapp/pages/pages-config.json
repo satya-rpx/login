@@ -43,11 +43,15 @@
   "type" : "PAGE",
   "params" : [ ]
 }, {
-  "name" : "signup_page",
+  "name" : "test",
   "type" : "PAGE",
   "params" : [ ]
 }, {
   "name" : "topnav",
   "type" : "TOPNAV",
+  "params" : [ ]
+}, {
+  "name" : "website",
+  "type" : "PAGE",
   "params" : [ ]
 } ]

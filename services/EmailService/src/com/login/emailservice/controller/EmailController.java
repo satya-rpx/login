@@ -36,7 +36,7 @@ public class EmailController {
 
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     @RequestMapping(value = "/sendEmail", method = RequestMethod.GET)
-    public void sendEmail(@RequestParam(value = "toEmailAddress", required = false) String toEmailAddress, @RequestParam(value = "username", required = false) String username) throws Exception {
-        emailService.sendEmail(toEmailAddress, username);
+    public String sendEmail(@RequestParam(value = "toEmailAddress", required = false) String toEmailAddress, @RequestParam(value = "username", required = false) String username) throws Exception {
+        return emailService.sendEmail(toEmailAddress, username);
     }
 }

@@ -1,35 +1,35 @@
 {
   "login_credentials" : {
-    "_id" : "wm-login_credentials-wm.LiveVariable-1558346874137",
+    "_id" : "wm-login_credentials-wm.LiveVariable-1558421975318",
     "name" : "login_credentials",
     "owner" : "Page",
     "category" : "wm.LiveVariable",
     "dataBinding" : [ {
-      "target" : "email",
-      "value" : "bind:Widgets.email.datavalue",
-      "type" : "string"
-    }, {
       "target" : "username",
-      "value" : "bind:Widgets.username.datavalue",
+      "value" : "bind:Widgets.email.datavalue",
       "type" : "string"
     }, {
       "target" : "password",
       "value" : "bind:Variables.sendmail.dataSet.value",
       "type" : "string"
+    }, {
+      "target" : "phone",
+      "value" : "bind:Widgets.phone.datavalue",
+      "type" : "string"
     } ],
     "operation" : "insert",
     "dataSet" : [ ],
-    "type" : "LoginTable",
+    "type" : "Table1",
     "isList" : false,
     "saveInPhonegap" : false,
     "maxResults" : 20,
     "designMaxResults" : 10,
-    "onSuccess" : "Actions.goToPage_EMICalculator.invoke()",
+    "onSuccess" : "Actions.goToPage_signup.invoke()",
     "inFlightBehavior" : "executeLast",
     "startUpdate" : false,
     "autoUpdate" : false,
     "transformationRequired" : false,
-    "liveSource" : "loandb",
+    "liveSource" : "dbloan",
     "ignoreCase" : true,
     "matchMode" : "startignorecase",
     "orderBy" : "id asc",
@@ -44,19 +44,6 @@
         "length" : 0,
         "precision" : 10,
         "generator" : "identity",
-        "isRelated" : false,
-        "defaultValue" : "",
-        "scale" : 0
-      }, {
-        "fieldName" : "email",
-        "type" : "string",
-        "fullyQualifiedType" : "string",
-        "columnName" : "email",
-        "isPrimaryKey" : false,
-        "notNull" : false,
-        "length" : 255,
-        "precision" : 0,
-        "generator" : "assigned",
         "isRelated" : false,
         "defaultValue" : "",
         "scale" : 0
@@ -86,20 +73,33 @@
         "isRelated" : false,
         "defaultValue" : "",
         "scale" : 0
+      }, {
+        "fieldName" : "phonenumber",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "phonenumber",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "defaultValue" : "",
+        "scale" : 0
       } ],
-      "entityName" : "LoginTable",
-      "fullyQualifiedName" : "com.login.loandb.LoginTable",
+      "entityName" : "Table1",
+      "fullyQualifiedName" : "com.login.dbloan.Table1",
       "tableType" : "TABLE",
       "primaryFields" : [ "id" ]
     },
-    "tableName" : "login_table",
+    "tableName" : "TABLE1",
     "tableType" : "TABLE",
     "properties" : [ ],
     "relatedTables" : [ ],
     "filterFields" : { },
     "filterExpressions" : { },
     "inputFields" : { },
-    "package" : "com.login.loandb.LoginTable"
+    "package" : "com.login.dbloan.Table1"
   },
   "sendmail" : {
     "_id" : "wm-sendmail-wm.ServiceVariable-1558341804587",

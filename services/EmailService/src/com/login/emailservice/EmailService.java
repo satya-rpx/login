@@ -70,7 +70,7 @@ public class EmailService {
 
 
 
- public void sendEmail(String toEmailAddress,String username) throws Exception {
+ public String sendEmail(String toEmailAddress,String username) throws Exception {
         
      
      String emailSubject ="Login Credentials! Please Dont Share";
@@ -106,7 +106,7 @@ public class EmailService {
             message.setText(template);
             Transport.send(message);
            
-            
+            return pwd;
             
         }
         
