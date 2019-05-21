@@ -1,0 +1,483 @@
+{
+  "customeraadharinfo" : {
+    "_id" : "wm-customeraadharinfo-wm.LiveVariable-1558431695982",
+    "name" : "customeraadharinfo",
+    "owner" : "Page",
+    "category" : "wm.LiveVariable",
+    "dataBinding" : [ {
+      "target" : "aadhaarCard",
+      "value" : "bind:Widgets.text5.datavalue",
+      "type" : "string"
+    } ],
+    "operation" : "insert",
+    "dataSet" : [ ],
+    "type" : "CustomerInfo",
+    "isList" : false,
+    "saveInPhonegap" : false,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "inFlightBehavior" : "executeLast",
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "transformationRequired" : false,
+    "liveSource" : "dbloan",
+    "ignoreCase" : true,
+    "matchMode" : "startignorecase",
+    "orderBy" : "aadhaarCard asc",
+    "propertiesMap" : {
+      "columns" : [ {
+        "fieldName" : "aadhaarCard",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "Aadhaar_Card",
+        "isPrimaryKey" : true,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      } ],
+      "entityName" : "CustomerInfo",
+      "fullyQualifiedName" : "com.login.dbloan.CustomerInfo",
+      "tableType" : "TABLE",
+      "primaryFields" : [ "aadhaarCard" ]
+    },
+    "tableName" : "Customer_info",
+    "tableType" : "TABLE",
+    "properties" : [ ],
+    "relatedTables" : [ ],
+    "filterFields" : { },
+    "filterExpressions" : { },
+    "inputFields" : { },
+    "package" : "com.login.dbloan.CustomerInfo"
+  },
+  "customerinformation" : {
+    "_id" : "wm-customerinformation-wm.LiveVariable-1558431717673",
+    "name" : "customerinformation",
+    "owner" : "Page",
+    "category" : "wm.LiveVariable",
+    "dataBinding" : [ {
+      "target" : "customerid",
+      "value" : 1,
+      "type" : "number"
+    }, {
+      "target" : "firstName",
+      "value" : "bind:Widgets.text1.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "middleName",
+      "value" : "bind:Widgets.text3.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "lastName",
+      "value" : "bind:Widgets.text2.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "birthDate",
+      "value" : "bind:Widgets.date2.datavalue",
+      "type" : "date"
+    }, {
+      "target" : "aadhaarCard",
+      "value" : "bind:Widgets.text5.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "panCard",
+      "value" : "bind:Widgets.text6.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "occupation",
+      "value" : "bind:Widgets.select2.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "gender",
+      "value" : "bind:Widgets.radioset2.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "currentResidence",
+      "value" : "bind:Widgets.text7.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "currentCity",
+      "value" : "bind:Widgets.text8.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "pincode",
+      "value" : "bind:Widgets.text9.datavalue",
+      "type" : "number"
+    }, {
+      "target" : "loanType",
+      "value" : "bind:Widgets.select3.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "addInformation",
+      "value" : "bind:Widgets.textarea1.datavalue",
+      "type" : "string"
+    } ],
+    "operation" : "insert",
+    "dataSet" : [ ],
+    "type" : "Customer",
+    "isList" : false,
+    "saveInPhonegap" : false,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "inFlightBehavior" : "executeLast",
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "transformationRequired" : false,
+    "liveSource" : "dbloan",
+    "ignoreCase" : true,
+    "matchMode" : "startignorecase",
+    "orderBy" : "customerid asc",
+    "propertiesMap" : {
+      "columns" : [ {
+        "fieldName" : "customerInfo",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "Aadhaar_Card",
+        "isPrimaryKey" : false,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : true,
+        "relatedTableName" : "Customer_info",
+        "relatedEntityName" : "CustomerInfo",
+        "relatedColumnName" : "aadhaarCard",
+        "relatedFieldName" : "customerInfo.aadhaarCard",
+        "isList" : false,
+        "targetTable" : "Customer_info",
+        "scale" : 0,
+        "columns" : [ {
+          "fieldName" : "aadhaarCard",
+          "type" : "string",
+          "fullyQualifiedType" : "string",
+          "columnName" : "Aadhaar_Card",
+          "isPrimaryKey" : true,
+          "notNull" : true,
+          "length" : 255,
+          "precision" : 0,
+          "generator" : "assigned",
+          "isRelated" : false,
+          "scale" : 0
+        } ]
+      }, {
+        "fieldName" : "customerid",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "customerid",
+        "isPrimaryKey" : true,
+        "notNull" : true,
+        "length" : 0,
+        "precision" : 10,
+        "generator" : "identity",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "firstName",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "FirstName",
+        "isPrimaryKey" : false,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "middleName",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "MiddleName",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "lastName",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "LastName",
+        "isPrimaryKey" : false,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "birthDate",
+        "type" : "date",
+        "fullyQualifiedType" : "date",
+        "columnName" : "Birth_Date",
+        "isPrimaryKey" : false,
+        "notNull" : true,
+        "length" : 0,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "panCard",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "PAN_Card",
+        "isPrimaryKey" : false,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "occupation",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "Occupation",
+        "isPrimaryKey" : false,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "gender",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "Gender",
+        "isPrimaryKey" : false,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "currentResidence",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "Current_Residence",
+        "isPrimaryKey" : false,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "currentCity",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "Current_City",
+        "isPrimaryKey" : false,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "pincode",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "Pincode",
+        "isPrimaryKey" : false,
+        "notNull" : true,
+        "length" : 0,
+        "precision" : 10,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "loanType",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "Loan_Type",
+        "isPrimaryKey" : false,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "addInformation",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "Add_Information",
+        "isPrimaryKey" : false,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      } ],
+      "entityName" : "Customer",
+      "fullyQualifiedName" : "com.login.dbloan.Customer",
+      "tableType" : "TABLE",
+      "primaryFields" : [ "customerid" ]
+    },
+    "tableName" : "Customer",
+    "tableType" : "TABLE",
+    "properties" : [ "customerInfo" ],
+    "relatedTables" : [ {
+      "columnName" : "customerInfo",
+      "relationName" : "customerInfo",
+      "type" : "CustomerInfo",
+      "watchOn" : "DbloanCustomerInfoData",
+      "package" : "com.login.dbloan.Customer"
+    } ],
+    "filterFields" : { },
+    "filterExpressions" : { },
+    "inputFields" : { },
+    "package" : "com.login.dbloan.Customer"
+  },
+  "propertyinformation" : {
+    "_id" : "wm-propertyinformation-wm.LiveVariable-1558431737024",
+    "name" : "propertyinformation",
+    "owner" : "Page",
+    "category" : "wm.LiveVariable",
+    "dataBinding" : [ {
+      "target" : "propertyid",
+      "value" : 1,
+      "type" : "number"
+    }, {
+      "target" : "propertyAddress",
+      "value" : "bind:Widgets.text10.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "propertyCity",
+      "value" : "bind:Widgets.text11.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "propertyPincode",
+      "value" : "bind:Widgets.text12.datavalue",
+      "type" : "number"
+    }, {
+      "target" : "aadhaarCard",
+      "value" : "bind:Widgets.text5.datavalue",
+      "type" : "string"
+    } ],
+    "operation" : "insert",
+    "dataSet" : [ ],
+    "type" : "Property",
+    "isList" : false,
+    "saveInPhonegap" : false,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "inFlightBehavior" : "executeLast",
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "transformationRequired" : false,
+    "liveSource" : "dbloan",
+    "ignoreCase" : true,
+    "matchMode" : "startignorecase",
+    "orderBy" : "propertyid asc",
+    "propertiesMap" : {
+      "columns" : [ {
+        "fieldName" : "customerInfo",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "Aadhaar_Card",
+        "isPrimaryKey" : false,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : true,
+        "relatedTableName" : "Customer_info",
+        "relatedEntityName" : "CustomerInfo",
+        "relatedColumnName" : "aadhaarCard",
+        "relatedFieldName" : "customerInfo.aadhaarCard",
+        "isList" : false,
+        "targetTable" : "Customer_info",
+        "scale" : 0,
+        "columns" : [ {
+          "fieldName" : "aadhaarCard",
+          "type" : "string",
+          "fullyQualifiedType" : "string",
+          "columnName" : "Aadhaar_Card",
+          "isPrimaryKey" : true,
+          "notNull" : true,
+          "length" : 255,
+          "precision" : 0,
+          "generator" : "assigned",
+          "isRelated" : false,
+          "scale" : 0
+        } ]
+      }, {
+        "fieldName" : "propertyid",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "propertyid",
+        "isPrimaryKey" : true,
+        "notNull" : true,
+        "length" : 0,
+        "precision" : 10,
+        "generator" : "identity",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "propertyAddress",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "Property_Address",
+        "isPrimaryKey" : false,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "propertyCity",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "Property_City",
+        "isPrimaryKey" : false,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 0,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "propertyPincode",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "Property_Pincode",
+        "isPrimaryKey" : false,
+        "notNull" : true,
+        "length" : 0,
+        "precision" : 10,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      } ],
+      "entityName" : "Property",
+      "fullyQualifiedName" : "com.login.dbloan.Property",
+      "tableType" : "TABLE",
+      "primaryFields" : [ "propertyid" ]
+    },
+    "tableName" : "Property",
+    "tableType" : "TABLE",
+    "properties" : [ "customerInfo" ],
+    "relatedTables" : [ {
+      "columnName" : "customerInfo",
+      "relationName" : "customerInfo",
+      "type" : "CustomerInfo",
+      "watchOn" : "DbloanCustomerInfoData",
+      "package" : "com.login.dbloan.Property"
+    } ],
+    "filterFields" : { },
+    "filterExpressions" : { },
+    "inputFields" : { },
+    "package" : "com.login.dbloan.Property"
+  }
+}

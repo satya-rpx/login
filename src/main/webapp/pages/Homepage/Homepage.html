@@ -1,0 +1,210 @@
+<wm-page pagetitle="Homepage" name="page1">
+    <wm-header content="header" name="header1"></wm-header>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-container name="container2" width="100%">
+                <wm-label padding="unset 0.5em" name="label1" caption="User Information" fontweight="bold" textalign="left" fontsize="16" color="black"></wm-label>
+            </wm-container>
+            <wm-layoutgrid name="layoutgrid2" class="bordered standard">
+                <wm-gridrow name="gridrow4" class="bordered-bottom">
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn8">
+                        <wm-label padding="1em 0.5em unset 0.5em" name="label2" caption="Name :" fontweight="bold"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn12">
+                        <wm-composite name="composite1" width="100%" margin="5px unset unset unset">
+                            <wm-container class="col-md-9" name="container3">
+                                <wm-text name="text1" placeholder="Enter first name" fontweight="bold"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn13">
+                        <wm-composite name="composite3" width="100%">
+                            <wm-container class="col-md-9" name="container5">
+                                <wm-text name="text3" placeholder="Enter middle name" margin="5px unset unset unset" fontweight="bold"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn9">
+                        <wm-composite name="composite2" width="80%" margin="5px unset unset unset">
+                            <wm-container class="col-md-9" name="container4">
+                                <wm-text name="text2" placeholder="Enter last name" fontweight="bold"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow5" class="bordered-bottom">
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn10">
+                        <wm-label padding="1em 0.5em unset 0.5em" name="label6" caption="Date Of Birth :" fontweight="bold"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn11">
+                        <wm-composite name="composite7" margin="5px unset unset unset">
+                            <wm-container class="col-md-9" name="container9">
+                                <wm-date name="date2"></wm-date>
+                            </wm-container>
+                            <wm-label padding="unset 0.5em" name="label11" caption="(MM/DD/YYYY)" margin="8px unset unset -130px"></wm-label>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn14"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow7" class="bordered-bottom">
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn18">
+                        <wm-label padding="1em 0.5em unset 0.5em" caption="Aadhaar Card :" fontweight="bold" name="label13"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn19">
+                        <wm-composite width="100%" margin="5px unset unset unset" name="composite8">
+                            <wm-container class="col-md-9" name="container10">
+                                <wm-text placeholder="Enter aadhaar card" fontweight="bold" name="text5"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn20"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow8" class="bordered-bottom">
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn21">
+                        <wm-label padding="1em 0.5em unset 0.5em" caption="PAN Card :" fontweight="bold" name="label14"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn22">
+                        <wm-composite width="100%" margin="5px unset unset unset" name="composite9">
+                            <wm-container class="col-md-9" name="container11">
+                                <wm-text placeholder="Enter PAN card" fontweight="bold" name="text6"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn23"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow9" class="bordered-bottom" height="45">
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn24">
+                        <wm-label padding="1em 0.5em unset 0.5em" caption="Occupation :" fontweight="bold" name="label15"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn25">
+                        <wm-composite name="composite16_1">
+                            <wm-container class="col-md-9" name="container17_1">
+                                <wm-select name="select2" dataset="Salaried,Self-employed (Business),Student,Retired" datafield="All Fields" margin="5px unset unset unset" placeholder="Select" fontweight="bold" textalign="center"></wm-select>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn26"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow13" class="bordered-bottom">
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn36">
+                        <wm-label padding="1em 0.5em unset 0.5em" caption="Gender :" fontweight="bold" name="label18" margin="30px unset unset unset"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn37">
+                        <wm-composite name="composite12" margin="5px unset unset unset">
+                            <wm-container class="col-md-9" name="container14" height="90">
+                                <wm-radioset height="auto" name="radioset2" dataset="Male, Female, Transgender"></wm-radioset>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn38"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow14" class="bordered-bottom">
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn39">
+                        <wm-label padding="1em 0.5em unset 0.5em" caption="Current Residence :" fontweight="bold" name="label20"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn40">
+                        <wm-composite name="composite13" fontweight="bold" margin="5px unset unset unset" width="82%">
+                            <wm-container class="col-md-9" name="container15">
+                                <wm-text name="text7" placeholder="Enter the address"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn41"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow15" class="bordered-bottom">
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn42">
+                        <wm-label padding="1em 0.5em unset 0.5em" caption="Current City :" fontweight="bold" name="label22"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn43">
+                        <wm-composite width="100%" margin="5px unset unset unset" name="composite14">
+                            <wm-container class="col-md-9" name="container16">
+                                <wm-text placeholder="Enter city" fontweight="bold" name="text8"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn44">
+                        <wm-label padding="1em 0.5em unset 0.5em" caption="Pin Code :" fontweight="bold" name="label23"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn45">
+                        <wm-composite width="100%" margin="5px unset unset -80px" name="composite15">
+                            <wm-container class="col-md-9" name="container17">
+                                <wm-text placeholder="Enter pincode" fontweight="bold" name="text9" type="number"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn46"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow16" class="bordered-bottom" height="45">
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn47">
+                        <wm-label padding="1em 0.5em unset 0.5em" caption="Loan Type :" fontweight="bold" name="label24"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn48">
+                        <wm-select dataset="Home Loans,Home Improvement Loans,Plot Loans" datafield="All Fields" margin="5px unset unset unset" placeholder="Select" fontweight="bold" textalign="center" name="select3" width="75%"></wm-select>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn49"></wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn50"></wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn51"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow17" class="bordered-bottom">
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn52">
+                        <wm-label padding="1em 0.5em unset 0.5em" caption="Property Address :" fontweight="bold" name="label25"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn53">
+                        <wm-composite fontweight="bold" margin="5px unset unset unset" width="82%" name="composite16">
+                            <wm-container class="col-md-9" name="container18">
+                                <wm-text placeholder="Enter the address" name="text10"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn54"></wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn55"></wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn56"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow18" class="bordered-bottom">
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn57">
+                        <wm-label padding="1em 0.5em unset 0.5em" caption="Property City :" fontweight="bold" name="label26"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn58">
+                        <wm-composite width="100%" margin="5px unset unset unset" name="composite17">
+                            <wm-container class="col-md-9" name="container19">
+                                <wm-text placeholder="Enter city" fontweight="bold" name="text11"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn59">
+                        <wm-label padding="1em 0.5em unset 0.5em" caption="Property Pin Code :" fontweight="bold" name="label27"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn60">
+                        <wm-composite width="100%" margin="5px unset unset -80px" name="composite18">
+                            <wm-container class="col-md-9" name="container20">
+                                <wm-text placeholder="Enter pincode" fontweight="bold" name="text12" type="number"></wm-text>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn61"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow19" class="bordered-bottom">
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn62">
+                        <wm-label padding="1em 0.5em unset 0.5em" caption="Additional Information :" fontweight="bold" name="label28"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn63">
+                        <wm-composite name="composite19" margin="5px unset unset unset">
+                            <wm-container class="col-md-9" name="container21">
+                                <wm-textarea name="textarea1"></wm-textarea>
+                            </wm-container>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn64"></wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn65"></wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn66"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow20">
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn67">
+                        <wm-button class="btn-default btn-primary" caption="Submit" type="button" margin="unset 0.5em unset 50em" name="button1" fontweight="bold" textalign="center" on-click="Variables.customeraadharinfo.createRecord();Variables.customerinformation.createRecord();Variables.propertyinformation.createRecord()"></wm-button>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer content="footer" name="footer1"></wm-footer>
+</wm-page>
