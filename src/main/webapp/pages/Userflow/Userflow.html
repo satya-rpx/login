@@ -1,0 +1,100 @@
+<wm-page pagetitle="Userflow" name="page1">
+    <wm-header content="header" name="header" height="auto"></wm-header>
+    <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
+    <wm-content name="content">
+        <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
+        <wm-page-content columnwidth="10" name="mainContent" padding="unset 15px">
+            <wm-tabs name="tabs1">
+                <wm-tabpane name="tabpane1" title="PERSONAL DETAILS">
+                    <wm-label padding="unset 0.5em" name="label1" caption="Customer Information" class="h1 h3"></wm-label>
+                    <wm-layoutgrid name="layoutgrid1">
+                        <wm-gridrow name="gridrow1">
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn1">
+                                <wm-label padding="unset 0.5em" name="label2" caption="Name" class="h4" fontweight="bold"></wm-label>
+                            </wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn2">
+                                <wm-label padding="unset 0.5em" name="label4" class="h4" fontweight="bold" caption="DOB"></wm-label>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow2">
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn3">
+                                <wm-composite name="composite1">
+                                    <wm-container class="col-md-9" name="container1">
+                                        <wm-label padding="unset 0.5em" name="label12_1" caption="bind:Variables.DummyDBCustomerData.firstRecord.name"></wm-label>
+                                    </wm-container>
+                                </wm-composite>
+                            </wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn4">
+                                <wm-composite name="composite2">
+                                    <wm-container class="col-md-9" name="container2">
+                                        <wm-label padding="unset 0.5em" name="label13" caption="bind:Variables.DummyDBCustomerData.firstRecord.dob"></wm-label>
+                                    </wm-container>
+                                </wm-composite>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow3">
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn5">
+                                <wm-label padding="unset 0.5em" name="label7" caption="EmailId" class="h4" fontweight="bold"></wm-label>
+                            </wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn6">
+                                <wm-label padding="unset 0.5em" name="label8" class="h4" fontweight="bold" caption="Mobile Number"></wm-label>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow4">
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn7">
+                                <wm-composite name="composite3">
+                                    <wm-container class="col-md-9" name="container3">
+                                        <wm-label padding="unset 0.5em" name="label14" caption="bind:Variables.DummyDBCustomerData.firstRecord.email"></wm-label>
+                                    </wm-container>
+                                </wm-composite>
+                            </wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn8">
+                                <wm-label padding="unset 0.5em" name="label11_1" caption="bind:Variables.DummyDBCustomerData.firstRecord.mobilenumber"></wm-label>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow5">
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn9">
+                                <wm-label padding="unset 0.5em" name="label9" class="h4" fontweight="bold" caption="Employment Status"></wm-label>
+                            </wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn10">
+                                <wm-label padding="unset 0.5em" name="label10" class="h4" fontweight="bold"></wm-label>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow6">
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn11"></wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn12"></wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow7">
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn13">
+                                <wm-label padding="unset 0.5em" name="label11" class="h4" fontweight="bold"></wm-label>
+                            </wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn14">
+                                <wm-label padding="unset 0.5em" name="label12" class="h4" fontweight="bold"></wm-label>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow8">
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn15"></wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn16"></wm-gridcolumn>
+                        </wm-gridrow>
+                    </wm-layoutgrid>
+                </wm-tabpane>
+                <wm-tabpane name="tabpane2" title="PROFESSIONAL DETAILS">
+                    <wm-label padding="unset 0.5em" name="label11_2" caption="Professional Details" class="h3"></wm-label>
+                    <wm-layoutgrid name="layoutgrid2">
+                        <wm-gridrow name="gridrow9">
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn17">
+                                <wm-label padding="unset 0.5em" name="label15" caption="Employment Type"></wm-label>
+                            </wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn18"></wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow10">
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn19"></wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn20"></wm-gridcolumn>
+                        </wm-gridrow>
+                    </wm-layoutgrid>
+                </wm-tabpane>
+            </wm-tabs>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer name="footer" content="footer"></wm-footer>
+</wm-page>
