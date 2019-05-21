@@ -19,6 +19,10 @@
   "type" : "HEADER",
   "params" : [ ]
 }, {
+  "name" : "index",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
   "name" : "leftnav",
   "type" : "LEFTNAV",
   "params" : [ ]
