@@ -47,10 +47,6 @@
   "type" : "RIGHTNAV",
   "params" : [ ]
 }, {
-  "name" : "signup",
-  "type" : "PAGE",
-  "params" : [ ]
-}, {
   "name" : "test",
   "type" : "PAGE",
   "params" : [ ]

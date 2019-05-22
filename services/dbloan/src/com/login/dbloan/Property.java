@@ -30,10 +30,10 @@ import org.hibernate.annotations.FetchMode;
 public class Property implements Serializable {
 
     private Integer propertyid;
+    private String aadhaarCard;
     private String propertyAddress;
     private String propertyCity;
     private int propertyPincode;
-    private String aadhaarCard;
     private CustomerInfo customerInfo;
 
     @Id
@@ -45,6 +45,15 @@ public class Property implements Serializable {
 
     public void setPropertyid(Integer propertyid) {
         this.propertyid = propertyid;
+    }
+
+    @Column(name = "`Aadhaar_Card`", nullable = false, length = 255)
+    public String getAadhaarCard() {
+        return this.aadhaarCard;
+    }
+
+    public void setAadhaarCard(String aadhaarCard) {
+        this.aadhaarCard = aadhaarCard;
     }
 
     @Column(name = "`Property_Address`", nullable = false, length = 255)
@@ -72,15 +81,6 @@ public class Property implements Serializable {
 
     public void setPropertyPincode(int propertyPincode) {
         this.propertyPincode = propertyPincode;
-    }
-
-    @Column(name = "`Aadhaar_Card`", nullable = false, length = 255)
-    public String getAadhaarCard() {
-        return this.aadhaarCard;
-    }
-
-    public void setAadhaarCard(String aadhaarCard) {
-        this.aadhaarCard = aadhaarCard;
     }
 
     @ManyToOne(fetch = FetchType.EAGER)

@@ -4,9 +4,7 @@
         <wm-page-content columnwidth="12" name="mainContent" class="page">
             <wm-layoutgrid name="layoutgrid1">
                 <wm-gridrow name="gridrow1">
-                    <wm-gridcolumn columnwidth="8" name="gridcolumn1">
-                        <wm-picture name="picture1" width="800" height="280" picturesource="resources/images/imagelists/how-to-get-easy-loans-housing-finance.jpg"></wm-picture>
-                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn1"></wm-gridcolumn>
                     <wm-gridcolumn columnwidth="4" name="gridcolumn2">
                         <wm-container name="container5_1" width="330" backgroundcolor="#2a2d27" height="280" padding="10px unset unset unset">
                             <wm-composite name="composite1" margin="40px unset unset unset">
@@ -24,17 +22,11 @@
                                     <wm-text width="350" height="40" name="phone" placeholder="Phone Number" autocomplete="false" margin="unset unset unset 35px"></wm-text>
                                 </wm-container>
                             </wm-composite>
-                            <wm-button class="btn-default" caption="Create Account" type="button" margin="1em 0.5em unset 8em" name="button1" on-click="Variables.sendmail.invoke()" backgroundcolor="#a1e876" bordercolor="#a1e876" fontweight="bold" height="40"></wm-button>
+                            <wm-button class="btn-default" caption="Create Account" type="button" margin="1em 0.5em unset 8em" name="button1" on-click="Variables.sendmail.invoke();Actions.goToPage_Homepage.invoke()" backgroundcolor="#a1e876" bordercolor="#a1e876"
+                                fontweight="bold" height="40"></wm-button>
                         </wm-container>
                     </wm-gridcolumn>
-                </wm-gridrow>
-                <wm-gridrow name="gridrow2">
-                    <wm-gridcolumn columnwidth="8" name="gridcolumn3"></wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="4" name="gridcolumn4"></wm-gridcolumn>
-                </wm-gridrow>
-                <wm-gridrow name="gridrow3">
-                    <wm-gridcolumn columnwidth="8" name="gridcolumn5"></wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="4" name="gridcolumn6"></wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn3"></wm-gridcolumn>
                 </wm-gridrow>
             </wm-layoutgrid>
         </wm-page-content>

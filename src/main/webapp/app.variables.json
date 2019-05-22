@@ -26,6 +26,20 @@
     "dataSet" : [ ],
     "pageTransitions" : "none"
   },
+  "goToPage_Homepage" : {
+    "_id" : "wm-goToPage_Homepage-wm.NavigationVariable-1558516490891",
+    "name" : "goToPage_Homepage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ {
+      "target" : "pageName",
+      "value" : "Homepage",
+      "type" : "string"
+    } ],
+    "operation" : "gotoPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
   "goToPage_loandetailspage" : {
     "_id" : "wm-goToPage_loandetailspage-wm.NavigationVariable-1558423626542",
     "name" : "goToPage_loandetailspage",
@@ -44,17 +58,6 @@
     "category" : "wm.NavigationVariable",
     "operation" : "gotoPage",
     "pageName" : "Main"
-  },
-  "goToPage_signup" : {
-    "_id" : "wm-goToPage_signup-wm.NavigationVariable-1558502732321",
-    "name" : "goToPage_signup",
-    "owner" : "App",
-    "category" : "wm.NavigationVariable",
-    "dataBinding" : [ ],
-    "operation" : "gotoPage",
-    "pageName" : "signup",
-    "dataSet" : [ ],
-    "pageTransitions" : "none"
   },
   "goToPage_test" : {
     "_id" : "wm-goToPage_test-wm.NavigationVariable-1558422427600",
