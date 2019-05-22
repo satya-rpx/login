@@ -11,7 +11,16 @@
   "dbName" : "dbloan",
   "port" : null,
   "schemaName" : null,
-  "tableFilter" : [ ],
+  "tableFilter" : [ {
+    "table" : "Customer_info",
+    "schema" : null
+  }, {
+    "table" : "Customers",
+    "schema" : null
+  }, {
+    "table" : "Property",
+    "schema" : null
+  } ],
   "schemaFilter" : [ ],
   "impersonateUser" : false,
   "activeDirectoryDomain" : null,

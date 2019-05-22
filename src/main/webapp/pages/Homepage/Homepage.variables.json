@@ -53,7 +53,7 @@
     "package" : "com.login.dbloan.CustomerInfo"
   },
   "customerinformation" : {
-    "_id" : "wm-customerinformation-wm.LiveVariable-1558431717673",
+    "_id" : "wm-customerinformation-wm.LiveVariable-1558509310694",
     "name" : "customerinformation",
     "owner" : "Page",
     "category" : "wm.LiveVariable",
@@ -116,7 +116,7 @@
     } ],
     "operation" : "insert",
     "dataSet" : [ ],
-    "type" : "Customer",
+    "type" : "Customers",
     "isList" : false,
     "saveInPhonegap" : false,
     "maxResults" : 20,
@@ -318,12 +318,12 @@
         "isRelated" : false,
         "scale" : 0
       } ],
-      "entityName" : "Customer",
-      "fullyQualifiedName" : "com.login.dbloan.Customer",
+      "entityName" : "Customers",
+      "fullyQualifiedName" : "com.login.dbloan.Customers",
       "tableType" : "TABLE",
       "primaryFields" : [ "customerid" ]
     },
-    "tableName" : "Customer",
+    "tableName" : "Customers",
     "tableType" : "TABLE",
     "properties" : [ "customerInfo" ],
     "relatedTables" : [ {
@@ -331,12 +331,12 @@
       "relationName" : "customerInfo",
       "type" : "CustomerInfo",
       "watchOn" : "DbloanCustomerInfoData",
-      "package" : "com.login.dbloan.Customer"
+      "package" : "com.login.dbloan.Customers"
     } ],
     "filterFields" : { },
     "filterExpressions" : { },
     "inputFields" : { },
-    "package" : "com.login.dbloan.Customer"
+    "package" : "com.login.dbloan.Customers"
   },
   "propertyinformation" : {
     "_id" : "wm-propertyinformation-wm.LiveVariable-1558431737024",
