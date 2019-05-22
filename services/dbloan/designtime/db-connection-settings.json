@@ -20,6 +20,9 @@
   }, {
     "table" : "Property",
     "schema" : null
+  }, {
+    "table" : "TABLE7",
+    "schema" : null
   } ],
   "schemaFilter" : [ ],
   "impersonateUser" : false,
