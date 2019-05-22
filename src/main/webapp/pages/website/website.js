@@ -40,3 +40,28 @@ Page.slider4Change = function($event, widget, newVal, oldVal) {
     emi = emi.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     Page.Widgets.text5.datavalue = emi;
 };
+
+
+Page.slider11Change = function($event, widget, newVal, oldVal) {
+    var amount = Page.Widgets.slider11.datavalue;
+    var years = (Page.Widgets.slider22.datavalue) * 12;
+    var age = Page.Widgets.slider33.datavalue;
+    var loanamount = ((amount * years) / 12).toFixed(2);
+    Page.Widgets.text44.datavalue = loanamount;
+};
+
+Page.slider22Change = function($event, widget, newVal, oldVal) {
+    var amount = Page.Widgets.slider11.datavalue;
+    var years = (Page.Widgets.slider22.datavalue) * 12;
+    var age = Page.Widgets.slider33.datavalue;
+    var loanamount = ((amount * years) / 12).toFixed(2);
+    Page.Widgets.text44.datavalue = loanamount;
+};
+
+Page.slider33Change = function($event, widget, newVal, oldVal) {
+    var amount = Page.Widgets.slider11.datavalue;
+    var years = (Page.Widgets.slider22.datavalue) * 12;
+    var age = Page.Widgets.slider33.datavalue;
+    var loanamount = ((amount * years) / 12).toFixed(2);
+    Page.Widgets.text44.datavalue = loanamount;
+};
