@@ -35,7 +35,7 @@
     "pageName" : "Main"
   },
   "goToPage_signup" : {
-    "_id" : "wm-goToPage_signup-wm.NavigationVariable-1558421350905",
+    "_id" : "wm-goToPage_signup-wm.NavigationVariable-1558502732321",
     "name" : "goToPage_signup",
     "owner" : "App",
     "category" : "wm.NavigationVariable",

@@ -1,9 +1,171 @@
 <wm-page pagetitle="Website" name="page1">
-    <wm-content name="content1">
-        <wm-page-content columnwidth="12" name="page_content1" class="page">
-            <wm-container name="container1" backgroundimage="resources/images/imagelists/offer-banner01.png" height="400">
-                <wm-picture name="picture1" picturesource="resources/images/imagelists/home-loan-icon.png" padding="-20px unset unset unset" margin="20px unset unset 10px" height="75" width="90"></wm-picture>
-                <wm-picture name="picture3" margin="20px unset unset 1000px" picturesource="resources/images/imagelists/free-cliparts-clipartbest-43524.png" backgroundcolor="#fffff" width="70"></wm-picture>
+    <wm-content name="content1" class="page">
+        <wm-page-content columnwidth="12" name="page_content1" class="page"><br><br>
+            <wm-container name="container11_1">
+                <wm-container name="container14" width="400">
+                    <wm-container backgroundimage="resources/images/imagelists/offer-banner01.png" color="#3f9e5f" name="container15" margin="-30px unset unset unset" borderwidth="0.5px" width="1300" height="400">
+                        <wm-container name="container16_1">
+                            <wm-picture picturesource="resources/images/imagelists/home-loan-icon.png" padding="-20px unset unset unset" margin="20px unset unset 10px" height="75" width="90" name="picture2"></wm-picture>
+                        </wm-container>
+                        <wm-container margin="50px unset unset unset" name="container16" width="950">
+                            <wm-label padding="unset 0.5em" caption="Move into your dream House" fontsize="34" fontweight="bold" textalign="left" color="#161917" width="950" name="label15"></wm-label>
+                            <wm-container name="container32">
+                                <wm-label padding="unset 0.5em" caption="We offer an easy-to-apply home loan with attractive interest rates," fontsize="18" color="#913969" fontweight="bold" name="label17"></wm-label>
+                            </wm-container>
+                        </wm-container>
+                        <wm-container name="container17">
+                            <wm-label padding="unset 0.5em" caption="" name="label16"></wm-label>
+                            <wm-label padding="unset 0.5em" name="label13" caption="to turn your dream into reality." fontsize="17" margin="unset unset unset 12px" color="#913969" fontweight="bold"></wm-label>
+                        </wm-container>
+                        <wm-container name="container17_1" margin="20px unset unset unset">
+                            <wm-button class="btn-default" caption="Apply Loan" type="button" margin="unset 0.5em unset 2em" name="button2" width="180" height="45" backgroundcolor="#d77936" fontsize="22" color="#4c3c3c" fontweight="bold" bordercolor="#d77936"
+                                borderstyle="solid" borderwidth="unset unset unset 0.5px" on-click="Actions.goToPage_Login_Copy.invoke()"></wm-button>
+                        </wm-container>
+                    </wm-container>
+                </wm-container>
+            </wm-container>
+            <!--  <wm-container name="container1" width="100%"><wm-layoutgrid name="layoutgrid1"><wm-gridrow name="gridrow1"><wm-gridcolumn columnwidth="12" name="gridcolumn1"><wm-label padding="unset 0.5em" name="label1" caption="EMI Calculator" class="h1" textalign="center" fontweight="bold" color="#96e099" backgroundcolor="#2f2828"></wm-label></wm-gridcolumn></wm-gridrow><wm-gridrow name="gridrow2"></wm-gridrow></wm-layoutgrid><wm-layoutgrid name="layoutgrid2"><wm-gridrow name="gridrow3"><wm-gridcolumn columnwidth="4" name="gridcolumn9"><wm-label padding="unset 0.5em" name="label3" caption="Loan Amount" fontweight="bold" textalign="center" width="100%" class="h6" fontsize="14"></wm-label><wm-composite name="composite2"><wm-container class="col-md-9" name="container3"><wm-slider name="slider2" width="125%" minvalue="100000" maxvalue="50000000" datavalue="100000" step="1" class="slider" id="amount" on-change="slider2Change($event, widget, newVal, oldVal)"></wm-slider></wm-container></wm-composite><wm-composite name="composite8"><wm-label class="col-md-3 control-label" name="label10_1" caption="Rs." fontweight="bold" padding="10px unset unset 75px"></wm-label><wm-container class="col-md-9" name="container9"><wm-text name="text5_1" maxchars="9" pattern="[0-9]*" datavalue="bind:Widgets.slider2.datavalue" fontsize="18" width="200"></wm-text></wm-container></wm-composite></wm-gridcolumn><wm-gridcolumn columnwidth="4" name="gridcolumn5"><wm-label padding="unset 0.5em" name="label3_1" width="100%" fontweight="bold" textalign="center" caption="Loan Tenure" class="h6" fontsize="14"></wm-label><wm-composite name="composite2_1"><wm-container class="col-md-9" name="container3_1"><wm-slider name="slider2_1" width="125%" datavalue="1" minvalue="1" maxvalue="30" step="1" id="years" onchange="computedEmi()" on-change="slider2_1Change($event, widget, newVal, oldVal)"></wm-slider></wm-container></wm-composite><wm-composite name="composite9_1"><wm-label class="col-md-3 control-label" name="label11_1" caption="Years" fontweight="bold" padding="10px unset unset 60px"></wm-label><wm-container class="col-md-9" name="container10_1"><wm-text name="text6" maxchars="9" pattern="[0-9]*" datavalue="bind:Widgets.slider2_1.datavalue" fontsize="18" width="200"></wm-text></wm-container></wm-composite></wm-gridcolumn><wm-gridcolumn columnwidth="4" name="gridcolumn6"><wm-label padding="unset 0.5em" name="label7" width="100%" caption="Interest Rate" class="h6" fontweight="bold" textalign="center" fontsize="14"></wm-label><wm-composite name="composite4"><wm-container class="col-md-9" name="container5"><wm-slider name="slider4" width="125%" datavalue="1" minvalue="1" maxvalue="15" step="0.05" id="roi" onchange="computedEmi()" on-change="slider4Change($event, widget, newVal, oldVal)"></wm-slider></wm-container></wm-composite><wm-composite name="composite10"><wm-label class="col-md-3 control-label" name="label12" caption="%" fontweight="bold" padding="10px unset unset 80px"></wm-label><wm-container class="col-md-9" name="container11"><wm-text name="text7" maxchars="9" pattern="[0-9]*" datavalue="bind:Widgets.slider4.datavalue" fontsize="18" width="200"></wm-text></wm-container></wm-composite></wm-gridcolumn></wm-gridrow><wm-gridrow name="gridrow4"></wm-gridrow></wm-layoutgrid><wm-container name="container10_2"></wm-container><wm-container name="container11_1"></wm-container></wm-container><wm-label padding="unset 0.5em" name="label10" margin="50px unset unset 520px" caption="Your Loan EMI will be" textalign="left" fontweight="bold" class="h4" fontsize="18"></wm-label><wm-composite name="composite9" width="300" margin="unset unset unset 470px"><wm-label class="col-md-3 control-label" name="label11" caption="Rs." width="50" padding="10px unset unset 20px"></wm-label><wm-container class="col-md-9" name="container10" width="200"><wm-text name="text5" value="8,378.54" id="emi" width="200" fontweight="bold" fontsize="18" placeholder=""></wm-text></wm-container></wm-composite> --><br><br>
+            <wm-container name="container18">
+                <wm-container name="container11_1">
+                    <wm-container name="container11_1">
+                        <wm-tabs name="tabs1" height="400">
+                            <wm-tabpane name="tabpane1" title="EMI Calculator" bordercolor="#1a1313">
+                                <wm-container name="container1">
+                                    <wm-layoutgrid name="layoutgrid1">
+                                        <wm-gridrow name="gridrow1">
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn1">
+                                                <wm-label padding="unset 0.5em" name="label1" caption="EMI Calculator" class="h1" textalign="center" fontweight="bold" backgroundcolor="#daf49c"></wm-label>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                        <wm-gridrow name="gridrow2"></wm-gridrow>
+                                    </wm-layoutgrid>
+                                    <wm-layoutgrid name="layoutgrid2">
+                                        <wm-gridrow name="gridrow3">
+                                            <wm-gridcolumn columnwidth="4" name="gridcolumn9">
+                                                <wm-label padding="unset 0.5em" name="label3" caption="Loan Amount" fontweight="bold" textalign="center" width="100%" class="h6" fontsize="14"></wm-label>
+                                                <wm-composite name="composite2">
+                                                    <wm-container class="col-md-9" name="container3">
+                                                        <wm-slider name="slider2" width="125%" minvalue="100000" maxvalue="50000000" datavalue="100000" step="1" class="slider" id="amount" on-change="slider2Change($event, widget, newVal, oldVal)"></wm-slider>
+                                                    </wm-container>
+                                                </wm-composite>
+                                                <wm-composite name="composite8">
+                                                    <wm-label class="col-md-3 control-label" name="label10_1" caption="Rs." fontweight="bold" padding="10px unset unset 75px"></wm-label>
+                                                    <wm-container class="col-md-9" name="container9">
+                                                        <wm-text name="text5_1" maxchars="9" pattern="[0-9]*" datavalue="bind:Widgets.slider2.datavalue" fontsize="18" width="200" backgroundcolor="#93cdd8"></wm-text>
+                                                    </wm-container>
+                                                </wm-composite>
+                                            </wm-gridcolumn>
+                                            <wm-gridcolumn columnwidth="4" name="gridcolumn5">
+                                                <wm-label padding="unset 0.5em" name="label3_1" width="100%" fontweight="bold" textalign="center" caption="Loan Tenure" class="h6" fontsize="14"></wm-label>
+                                                <wm-composite name="composite2_1">
+                                                    <wm-container class="col-md-9" name="container3_1">
+                                                        <wm-slider name="slider2_1" width="125%" datavalue="1" minvalue="1" maxvalue="30" step="1" id="years" onchange="computedEmi()" on-change="slider2_1Change($event, widget, newVal, oldVal)"></wm-slider>
+                                                    </wm-container>
+                                                </wm-composite>
+                                                <wm-composite name="composite9_1">
+                                                    <wm-label class="col-md-3 control-label" name="label11_1" caption="Years" fontweight="bold" padding="10px unset unset 60px"></wm-label>
+                                                    <wm-container class="col-md-9" name="container10_1">
+                                                        <wm-text name="text6" maxchars="9" pattern="[0-9]*" datavalue="bind:Widgets.slider2_1.datavalue" fontsize="18" width="200" backgroundcolor="#93cdd8"></wm-text>
+                                                    </wm-container>
+                                                </wm-composite>
+                                            </wm-gridcolumn>
+                                            <wm-gridcolumn columnwidth="4" name="gridcolumn6">
+                                                <wm-label padding="unset 0.5em" name="label7" width="100%" caption="Interest Rate" class="h6" fontweight="bold" textalign="center" fontsize="14"></wm-label>
+                                                <wm-composite name="composite4">
+                                                    <wm-container class="col-md-9" name="container5">
+                                                        <wm-slider name="slider4" width="125%" datavalue="1" minvalue="1" maxvalue="15" step="0.05" id="roi" onchange="computedEmi()" on-change="slider4Change($event, widget, newVal, oldVal)"></wm-slider>
+                                                    </wm-container>
+                                                </wm-composite>
+                                                <wm-composite name="composite10">
+                                                    <wm-label class="col-md-3 control-label" name="label12" caption="%" fontweight="bold" padding="10px unset unset 80px"></wm-label>
+                                                    <wm-container class="col-md-9" name="container11">
+                                                        <wm-text name="text7" maxchars="9" pattern="[0-9]*" datavalue="bind:Widgets.slider4.datavalue" fontsize="18" width="200" backgroundcolor="#93cdd8"></wm-text>
+                                                    </wm-container>
+                                                </wm-composite>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                        <wm-gridrow name="gridrow4"></wm-gridrow>
+                                    </wm-layoutgrid>
+                                </wm-container>
+                                <wm-label padding="unset 0.5em" name="label10" margin="50px unset unset 520px" caption="Your Loan EMI will be" textalign="left" fontweight="bold" class="h4" fontsize="18"></wm-label>
+                                <wm-composite name="composite9" width="300" margin="unset unset unset 470px">
+                                    <wm-label class="col-md-3 control-label" name="label11" caption="Rs." width="50" padding="10px unset unset 20px"></wm-label>
+                                    <wm-container class="col-md-9" name="container10" width="200">
+                                        <wm-text name="text5" value="8,378.54" id="emi" width="200" fontweight="bold" fontsize="18" placeholder="" backgroundcolor="#c4b64c"></wm-text>
+                                    </wm-container>
+                                </wm-composite>
+                            </wm-tabpane>
+                            <wm-tabpane name="tabpane2" title="Eligibility Checking">
+                                <wm-container name="container12">
+                                    <wm-container name="container1">
+                                        <wm-layoutgrid name="layoutgrid1">
+                                            <wm-gridrow name="gridrow1">
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn1">
+                                                    <wm-label padding="unset 0.5em" name="label1" caption="Eligibility Checking" class="h1" textalign="center" fontweight="bold" backgroundcolor="#daf49c"></wm-label>
+                                                </wm-gridcolumn>
+                                            </wm-gridrow>
+                                            <wm-gridrow name="gridrow2"></wm-gridrow>
+                                        </wm-layoutgrid>
+                                        <wm-layoutgrid name="layoutgrid2">
+                                            <wm-gridrow name="gridrow3">
+                                                <wm-gridcolumn columnwidth="4" name="gridcolumn9">
+                                                    <wm-label padding="unset 0.5em" name="label3" caption="Monthly Income" fontweight="bold" textalign="center" width="100%" class="h6" fontsize="14"></wm-label>
+                                                    <wm-composite name="composite2">
+                                                        <wm-container class="col-md-9" name="container3">
+                                                            <wm-slider name="slider11" width="125%" minvalue="10000" maxvalue="500000" datavalue="10000" step="1000" class="slider" id="amount" on-change="slider11Change($event, widget, newVal, oldVal)"></wm-slider>
+                                                        </wm-container>
+                                                    </wm-composite>
+                                                    <wm-composite name="composite8">
+                                                        <wm-label class="col-md-3 control-label" name="label10_1" caption="Rs." fontweight="bold" padding="10px unset unset 75px"></wm-label>
+                                                        <wm-container class="col-md-9" name="container9">
+                                                            <wm-text name="text11" maxchars="9" pattern="[0-9]*" datavalue="bind:Widgets.slider11.datavalue" fontsize="18" width="200" backgroundcolor="#93cdd8"></wm-text>
+                                                        </wm-container>
+                                                    </wm-composite>
+                                                </wm-gridcolumn>
+                                                <wm-gridcolumn columnwidth="4" name="gridcolumn5">
+                                                    <wm-label padding="unset 0.5em" name="label3_1" width="100%" fontweight="bold" textalign="center" caption="Loan Tenure" class="h6" fontsize="14"></wm-label>
+                                                    <wm-composite name="composite2_1">
+                                                        <wm-container class="col-md-9" name="container3_1">
+                                                            <wm-slider name="slider22" width="125%" datavalue="1" minvalue="1" maxvalue="30" step="1" id="years" on-change="slider22Change($event, widget, newVal, oldVal)"></wm-slider>
+                                                        </wm-container>
+                                                    </wm-composite>
+                                                    <wm-composite name="composite9_1">
+                                                        <wm-label class="col-md-3 control-label" name="label11_1" caption="Years" fontweight="bold" padding="10px unset unset 60px"></wm-label>
+                                                        <wm-container class="col-md-9" name="container10_1">
+                                                            <wm-text name="text22" maxchars="9" pattern="[0-9]*" datavalue="bind:Widgets.slider22.datavalue" fontsize="18" width="200" backgroundcolor="#93cdd8"></wm-text>
+                                                        </wm-container>
+                                                    </wm-composite>
+                                                </wm-gridcolumn>
+                                                <wm-gridcolumn columnwidth="4" name="gridcolumn6">
+                                                    <wm-label padding="unset 0.5em" name="label7" width="100%" caption="Your Age" class="h6" fontweight="bold" textalign="center" fontsize="14"></wm-label>
+                                                    <wm-composite name="composite4">
+                                                        <wm-container class="col-md-9" name="container5">
+                                                            <wm-slider name="slider33" width="125%" datavalue="21" minvalue="21" maxvalue="56" step="1" on-change="slider33Change($event, widget, newVal, oldVal)"></wm-slider>
+                                                        </wm-container>
+                                                    </wm-composite>
+                                                    <wm-composite name="composite10">
+                                                        <wm-label class="col-md-3 control-label" name="label12" caption="Age" fontweight="bold" padding="10px unset unset 80px"></wm-label>
+                                                        <wm-container class="col-md-9" name="container11">
+                                                            <wm-text name="text33" maxchars="9" pattern="[0-9]*" datavalue="bind:Widgets.slider33.datavalue" fontsize="18" width="200" backgroundcolor="#93cdd8"></wm-text>
+                                                        </wm-container>
+                                                    </wm-composite>
+                                                </wm-gridcolumn>
+                                            </wm-gridrow>
+                                            <wm-gridrow name="gridrow4"></wm-gridrow>
+                                        </wm-layoutgrid>
+                                    </wm-container>
+                                    <wm-label padding="unset 0.5em" name="label10" margin="50px unset unset 520px" caption="Your are eligible for loan amount:" textalign="left" fontweight="bold" class="h4" fontsize="18"></wm-label>
+                                    <wm-composite name="composite9" width="300" margin="unset unset unset 470px">
+                                        <wm-label class="col-md-3 control-label" name="label11" caption="Rs." width="50" padding="10px unset unset 20px"></wm-label>
+                                        <wm-container class="col-md-9" name="container10" width="200">
+                                            <wm-text name="text44" value="8,378.54" id="emi" width="200" fontweight="bold" fontsize="18" placeholder="" backgroundcolor="#c4b64c"></wm-text>
+                                        </wm-container>
+                                    </wm-composite>
+                                </wm-container>
+                            </wm-tabpane>
+                        </wm-tabs>
+                    </wm-container>
+                </wm-container>
             </wm-container>
         </wm-page-content>
     </wm-content>
