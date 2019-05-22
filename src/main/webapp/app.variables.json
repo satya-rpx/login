@@ -51,6 +51,20 @@
     "dataSet" : [ ],
     "pageTransitions" : "none"
   },
+  "goToPage_Login" : {
+    "_id" : "wm-goToPage_Login-wm.NavigationVariable-1558518404109",
+    "name" : "goToPage_Login",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ {
+      "target" : "pageName",
+      "value" : "Login",
+      "type" : "string"
+    } ],
+    "operation" : "gotoPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
   "goToPage_Main" : {
     "_id" : "wm-wm.NavigationVariable1389180517517",
     "name" : "goToPage_Main",

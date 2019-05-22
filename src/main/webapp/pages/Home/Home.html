@@ -4,72 +4,211 @@
     <wm-content name="content1">
         <wm-page-content columnwidth="12" name="page_content1" backgroundsize="100%,30%" backgroundrepeat="no-repeat">
             <wm-container name="container1">
-                <wm-label padding="unset 0.5em" name="label1" caption="Profile :" fontweight="bold" fontsize="18"></wm-label>
+                <wm-tabs name="tabs1">
+                    <wm-tabpane name="tabpane1" title="User Profile">
+                        <wm-liveform errormessage="" title="Customers Info" iconclass="wi wi-edit" defaultmode="View" dataset="bind:Variables.DbloanCustomers.dataSet" captionalign="left" captionposition="top" name="CustomersLiveForm1">
+                            <wm-layoutgrid columns="3" name="layoutgrid1">
+                                <wm-gridrow name="gridrow1">
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn1">
+                                        <wm-form-field name="firstName" displayname="First Name :" required="true" show="true" generator="assigned" primary-key="false" key="firstName" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
+                                            widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].firstName"></wm-form-field>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn2">
+                                        <wm-form-field name="middleName" displayname="Middle Name :" required="false" show="true" generator="assigned" primary-key="false" key="middleName" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
+                                            widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].middleName"></wm-form-field>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn3">
+                                        <wm-form-field name="lastName" displayname="Last Name :" required="true" show="true" generator="assigned" primary-key="false" key="lastName" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
+                                            widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].lastName"></wm-form-field>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow name="gridrow2">
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn4">
+                                        <wm-form-field name="birthDate" displayname="Birth Date :" required="true" show="true" generator="assigned" primary-key="false" key="birthDate" type="date" is-related="false" pc-display="true" mobile-display="true"
+                                            widget="date" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].birthDate"></wm-form-field>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn5">
+                                        <wm-form-field name="panCard" displayname="Pan Card :" required="true" show="true" generator="assigned" primary-key="false" key="panCard" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
+                                            widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].panCard"></wm-form-field>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn6">
+                                        <wm-form-field name="occupation" displayname="Occupation :" required="true" show="true" generator="assigned" primary-key="false" key="occupation" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
+                                            widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].occupation"></wm-form-field>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow name="gridrow3">
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn7">
+                                        <wm-form-field name="gender" displayname="Gender :" required="true" show="true" generator="assigned" primary-key="false" key="gender" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
+                                            widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].gender"></wm-form-field>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn8">
+                                        <wm-form-field name="currentResidence" displayname="Current Residence" required="true" show="true" generator="assigned" primary-key="false" key="currentResidence" type="string" is-related="false" maxchars="255" pc-display="true"
+                                            mobile-display="true" widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].currentResidence"></wm-form-field>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn9">
+                                        <wm-form-field name="currentCity" displayname="Current City :" required="true" show="true" generator="assigned" primary-key="false" key="currentCity" type="string" is-related="false" maxchars="255" pc-display="true"
+                                            mobile-display="true" widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].currentCity"></wm-form-field>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow name="gridrow4">
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn10">
+                                        <wm-form-field name="pincode" displayname="Pincode :" required="true" show="true" generator="assigned" primary-key="false" key="pincode" type="integer" is-related="false" step="0" pc-display="true" mobile-display="true"
+                                            widget="number" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].pincode"></wm-form-field>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn11">
+                                        <wm-form-field name="loanType" displayname="Loan Type :" required="true" show="true" generator="assigned" primary-key="false" key="loanType" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
+                                            widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].loanType"></wm-form-field>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn12">
+                                        <wm-form-field name="addInformation" displayname="Add Information :" required="true" show="true" generator="assigned" primary-key="false" key="addInformation" type="string" is-related="false" maxchars="255" pc-display="true"
+                                            mobile-display="true" widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].addInformation"></wm-form-field>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow name="gridrow5"></wm-gridrow>
+                            </wm-layoutgrid>
+                            <wm-form-field name="customerid" displayname="Customerid" required="true" show="false" generator="identity" primary-key="true" key="customerid" type="integer" is-related="false" step="0" pc-display="true" mobile-display="true"
+                                widget="number"></wm-form-field>
+                            <wm-form-action key="cancel" class="form-cancel btn-secondary" iconclass="wi wi-cancel" action="cancel()" display-name="Cancel" show="true" type="button" update-mode="true"></wm-form-action>
+                            <wm-form-action key="save" class="form-save btn-success" iconclass="wi wi-save" display-name="Save" show="true" type="submit" update-mode="true"></wm-form-action>
+                        </wm-liveform>
+                    </wm-tabpane>
+                    <wm-tabpane name="tabpane2" title="Polices">
+                        <wm-layoutgrid name="layoutgrid4">
+                            <wm-gridrow name="gridrow12">
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn28">
+                                    <wm-label padding="unset 0.5em" name="label9" caption="Current Home Loan Interest Rates" class="h2"></wm-label>
+                                </wm-gridcolumn>
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn29"></wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow13">
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn30">
+                                    <wm-label padding="unset 0.5em" name="label10" caption="* Loan Upto 20 Lakh" class="h4"></wm-label>
+                                </wm-gridcolumn>
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn31">
+                                    <wm-label padding="unset 0.5em" name="label16" caption="8.65% to 9.15%" class="h4"></wm-label>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow14">
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn32">
+                                    <wm-label padding="unset 0.5em" name="label11" caption="* 20.01 lakhs to 30 lakhs" class="h4"></wm-label>
+                                </wm-gridcolumn>
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn33">
+                                    <wm-label padding="unset 0.5em" name="label17_1" caption="8.70% to 9.2%" class="h4"></wm-label>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow15">
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn34">
+                                    <wm-label padding="unset 0.5em" name="label12" caption="* 30.01 lakhs to 40 lakhs" class="h4"></wm-label>
+                                </wm-gridcolumn>
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn35">
+                                    <wm-label padding="unset 0.5em" name="label18" caption="8.90% to 9.40%" class="h4"></wm-label>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow16">
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn36">
+                                    <wm-label padding="unset 0.5em" name="label14" caption="* 40.01 lakhs to 50 lakhs" class="h4"></wm-label>
+                                </wm-gridcolumn>
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn37">
+                                    <wm-label padding="unset 0.5em" name="label19" caption="8.95% to 9.45%" class="h4"></wm-label>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow17">
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn38">
+                                    <wm-label padding="unset 0.5em" name="label15" caption="* 50.01 lakhs to 60 lakhs" class="h4"></wm-label>
+                                </wm-gridcolumn>
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn39">
+                                    <wm-label padding="unset 0.5em" name="label20" caption="8.95% to 9.45%" class="h4"></wm-label>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow18">
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn40">
+                                    <wm-label padding="unset 0.5em" name="label17" caption="* 60.01 lakhs &amp; above" class="h4"></wm-label>
+                                </wm-gridcolumn>
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn41">
+                                    <wm-label padding="unset 0.5em" name="label21" caption="9.00% to 9.50%" class="h4"></wm-label>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                        </wm-layoutgrid>
+                    </wm-tabpane>
+                    <wm-tabpane name="tabpane3" title="APPLY LOAN">
+                        <wm-content name="content1">
+                            <wm-page-content columnwidth="12" name="page_content1" backgroundposition="ce">
+                                <wm-label padding="unset 0.5em" name="label1" caption="Loan Details:" class="h2"></wm-label>
+                                <wm-layoutgrid name="layoutgrid1">
+                                    <wm-gridrow name="gridrow1">
+                                        <wm-gridcolumn columnwidth="6" name="gridcolumn1">
+                                            <wm-composite name="composite1">
+                                                <wm-label class="col-md-3 control-label h5" name="label2" caption="Loan Amount:" fontweight="bold"></wm-label>
+                                                <wm-container class="col-md-9" name="container1">
+                                                    <wm-text name="text1" placeholder="Enter required amount" type="number" autocomplete="false"></wm-text>
+                                                </wm-container>
+                                            </wm-composite>
+                                        </wm-gridcolumn>
+                                        <wm-gridcolumn columnwidth="6" name="gridcolumn2">
+                                            <wm-composite name="composite2">
+                                                <wm-label class="col-md-3 control-label h5" name="label3" caption="Loan Tenure" fontweight="bold"></wm-label>
+                                                <wm-container class="col-md-9" name="container2">
+                                                    <wm-text name="text2" type="number" placeholder="Enter loan tenure" autocomplete="false"></wm-text>
+                                                </wm-container>
+                                            </wm-composite>
+                                        </wm-gridcolumn>
+                                    </wm-gridrow><br></wm-layoutgrid>
+                                <wm-label padding="unset 0.5em" name="label4" caption="Required Documents:" class="h2"></wm-label>
+                                <wm-layoutgrid name="layoutgrid2">
+                                    <wm-gridrow name="gridrow3">
+                                        <wm-gridcolumn columnwidth="4" name="gridcolumn6">
+                                            <wm-label padding="unset 0.5em" name="label5" caption="1. Aadhar Card" class="h4"></wm-label>
+                                        </wm-gridcolumn>
+                                        <wm-gridcolumn columnwidth="4" name="gridcolumn7">
+                                            <wm-fileupload name="fileupload1" on-select="Variables.FileServiceUploadFile.invoke()"></wm-fileupload>
+                                        </wm-gridcolumn>
+                                        <wm-gridcolumn columnwidth="4" name="gridcolumn14"></wm-gridcolumn>
+                                    </wm-gridrow>
+                                    <wm-gridrow name="gridrow4">
+                                        <wm-gridcolumn columnwidth="4" name="gridcolumn8">
+                                            <wm-label padding="unset 0.5em" name="label6" caption="2. PAN Card" class="h4"></wm-label>
+                                        </wm-gridcolumn>
+                                        <wm-gridcolumn columnwidth="4" name="gridcolumn9">
+                                            <wm-fileupload name="fileupload2" on-select="Variables.FileServiceUploadFile1.invoke()"></wm-fileupload>
+                                        </wm-gridcolumn>
+                                        <wm-gridcolumn columnwidth="4" name="gridcolumn15"></wm-gridcolumn>
+                                    </wm-gridrow>
+                                    <wm-gridrow name="gridrow5">
+                                        <wm-gridcolumn columnwidth="4" name="gridcolumn10">
+                                            <wm-label padding="unset 0.5em" name="label7" caption="3. Property Document" class="h4"></wm-label>
+                                        </wm-gridcolumn>
+                                        <wm-gridcolumn columnwidth="4" name="gridcolumn11">
+                                            <wm-fileupload name="fileupload3" on-select="Variables.FileServiceUploadFile2.invoke()"></wm-fileupload>
+                                        </wm-gridcolumn>
+                                        <wm-gridcolumn columnwidth="4" name="gridcolumn16"></wm-gridcolumn>
+                                    </wm-gridrow>
+                                    <wm-gridrow name="gridrow6">
+                                        <wm-gridcolumn columnwidth="4" name="gridcolumn12">
+                                            <wm-label padding="unset 0.5em" name="label8" caption="4. Form 16" class="h4"></wm-label>
+                                        </wm-gridcolumn>
+                                        <wm-gridcolumn columnwidth="4" name="gridcolumn13">
+                                            <wm-fileupload name="fileupload4" on-select="Variables.FileServiceUploadFile3.invoke()"></wm-fileupload>
+                                        </wm-gridcolumn>
+                                        <wm-gridcolumn columnwidth="4" name="gridcolumn17"></wm-gridcolumn>
+                                    </wm-gridrow>
+                                    <wm-gridrow name="gridrow7">
+                                        <wm-gridcolumn columnwidth="12" name="gridcolumn4" horizontalalign="center">
+                                            <wm-button class="btn-default btn-success" caption="SUBMIT" type="button" margin="unset 0.5em" name="button1" backgroundposition="center,top" on-click="Variables.FILEUPLOADNEWVARIABLE.createRecord();button1Click($event, widget);Variables.FileServiceListFiles.invoke()"></wm-button>
+                                        </wm-gridcolumn>
+                                    </wm-gridrow>
+                                </wm-layoutgrid>
+                                <wm-table name="listFilesTable1" title="" dataset="bind:Variables.FileServiceListFiles.dataSet" navigation="Basic">
+                                    <wm-table-column binding="size" caption="Size" pcdisplay="true" mobiledisplay="true" type="long"></wm-table-column>
+                                    <wm-table-column binding="path" caption="Path" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                                    <wm-table-column binding="inlinePath" caption="Inline Path" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                                    <wm-table-column binding="type" caption="Type" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                                    <wm-table-column binding="name" caption="Name" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                                </wm-table>
+                            </wm-page-content>
+                        </wm-content>
+                    </wm-tabpane>
+                </wm-tabs>
             </wm-container>
-            <wm-liveform errormessage="" title="Customers Info" iconclass="wi wi-edit" defaultmode="View" dataset="bind:Variables.DbloanCustomers.dataSet" captionalign="left" captionposition="top" name="CustomersLiveForm1">
-                <wm-layoutgrid columns="3" name="layoutgrid1">
-                    <wm-gridrow name="gridrow1">
-                        <wm-gridcolumn columnwidth="4" name="gridcolumn1">
-                            <wm-form-field name="firstName" displayname="First Name :" required="true" show="true" generator="assigned" primary-key="false" key="firstName" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
-                                widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].firstName"></wm-form-field>
-                        </wm-gridcolumn>
-                        <wm-gridcolumn columnwidth="4" name="gridcolumn2">
-                            <wm-form-field name="middleName" displayname="Middle Name :" required="false" show="true" generator="assigned" primary-key="false" key="middleName" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
-                                widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].middleName"></wm-form-field>
-                        </wm-gridcolumn>
-                        <wm-gridcolumn columnwidth="4" name="gridcolumn3">
-                            <wm-form-field name="lastName" displayname="Last Name :" required="true" show="true" generator="assigned" primary-key="false" key="lastName" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
-                                widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].lastName"></wm-form-field>
-                        </wm-gridcolumn>
-                    </wm-gridrow>
-                    <wm-gridrow name="gridrow2">
-                        <wm-gridcolumn columnwidth="4" name="gridcolumn4">
-                            <wm-form-field name="birthDate" displayname="Birth Date :" required="true" show="true" generator="assigned" primary-key="false" key="birthDate" type="date" is-related="false" pc-display="true" mobile-display="true" widget="date"
-                                defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].birthDate"></wm-form-field>
-                        </wm-gridcolumn>
-                        <wm-gridcolumn columnwidth="4" name="gridcolumn5">
-                            <wm-form-field name="panCard" displayname="Pan Card :" required="true" show="true" generator="assigned" primary-key="false" key="panCard" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true" widget="text"
-                                defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].panCard"></wm-form-field>
-                        </wm-gridcolumn>
-                        <wm-gridcolumn columnwidth="4" name="gridcolumn6">
-                            <wm-form-field name="occupation" displayname="Occupation :" required="true" show="true" generator="assigned" primary-key="false" key="occupation" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
-                                widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].occupation"></wm-form-field>
-                        </wm-gridcolumn>
-                    </wm-gridrow>
-                    <wm-gridrow name="gridrow3">
-                        <wm-gridcolumn columnwidth="4" name="gridcolumn7">
-                            <wm-form-field name="gender" displayname="Gender :" required="true" show="true" generator="assigned" primary-key="false" key="gender" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true" widget="text"
-                                defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].gender"></wm-form-field>
-                        </wm-gridcolumn>
-                        <wm-gridcolumn columnwidth="4" name="gridcolumn8">
-                            <wm-form-field name="currentResidence" displayname="Current Residence" required="true" show="true" generator="assigned" primary-key="false" key="currentResidence" type="string" is-related="false" maxchars="255" pc-display="true"
-                                mobile-display="true" widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].currentResidence"></wm-form-field>
-                        </wm-gridcolumn>
-                        <wm-gridcolumn columnwidth="4" name="gridcolumn9">
-                            <wm-form-field name="currentCity" displayname="Current City :" required="true" show="true" generator="assigned" primary-key="false" key="currentCity" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
-                                widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].currentCity"></wm-form-field>
-                        </wm-gridcolumn>
-                    </wm-gridrow>
-                    <wm-gridrow name="gridrow4">
-                        <wm-gridcolumn columnwidth="4" name="gridcolumn10">
-                            <wm-form-field name="pincode" displayname="Pincode :" required="true" show="true" generator="assigned" primary-key="false" key="pincode" type="integer" is-related="false" step="0" pc-display="true" mobile-display="true" widget="number"
-                                defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].pincode"></wm-form-field>
-                        </wm-gridcolumn>
-                        <wm-gridcolumn columnwidth="4" name="gridcolumn11">
-                            <wm-form-field name="loanType" displayname="Loan Type :" required="true" show="true" generator="assigned" primary-key="false" key="loanType" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
-                                widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].loanType"></wm-form-field>
-                        </wm-gridcolumn>
-                        <wm-gridcolumn columnwidth="4" name="gridcolumn12">
-                            <wm-form-field name="addInformation" displayname="Add Information :" required="true" show="true" generator="assigned" primary-key="false" key="addInformation" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
-                                widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].addInformation"></wm-form-field>
-                        </wm-gridcolumn>
-                    </wm-gridrow>
-                    <wm-gridrow name="gridrow5"></wm-gridrow>
-                </wm-layoutgrid>
-                <wm-form-field name="customerid" displayname="Customerid" required="true" show="false" generator="identity" primary-key="true" key="customerid" type="integer" is-related="false" step="0" pc-display="true" mobile-display="true" widget="number"></wm-form-field>
-                <wm-form-action key="cancel" class="form-cancel btn-secondary" iconclass="wi wi-cancel" action="cancel()" display-name="Cancel" show="true" type="button" update-mode="true"></wm-form-action>
-                <wm-form-action key="save" class="form-save btn-success" iconclass="wi wi-save" display-name="Save" show="true" type="submit" update-mode="true"></wm-form-action>
-            </wm-liveform>
         </wm-page-content>
     </wm-content>
     <wm-footer content="footer" name="footer1"></wm-footer>
