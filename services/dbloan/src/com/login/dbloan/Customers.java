@@ -31,19 +31,19 @@ import org.hibernate.annotations.FetchMode;
 public class Customers implements Serializable {
 
     private Integer customerid;
-    private String aadhaarCard;
-    private String addInformation;
-    private Date birthDate;
-    private String currentCity;
-    private String currentResidence;
     private String firstName;
-    private String gender;
-    private String lastName;
-    private String loanType;
     private String middleName;
-    private String occupation;
+    private String lastName;
+    private Date birthDate;
+    private String aadhaarCard;
     private String panCard;
+    private String occupation;
+    private String gender;
+    private String currentResidence;
+    private String currentCity;
     private int pincode;
+    private String loanType;
+    private String addInformation;
     private CustomerInfo customerInfo;
 
     @Id
@@ -57,51 +57,6 @@ public class Customers implements Serializable {
         this.customerid = customerid;
     }
 
-    @Column(name = "`Aadhaar_Card`", nullable = false, length = 255)
-    public String getAadhaarCard() {
-        return this.aadhaarCard;
-    }
-
-    public void setAadhaarCard(String aadhaarCard) {
-        this.aadhaarCard = aadhaarCard;
-    }
-
-    @Column(name = "`Add_Information`", nullable = false, length = 255)
-    public String getAddInformation() {
-        return this.addInformation;
-    }
-
-    public void setAddInformation(String addInformation) {
-        this.addInformation = addInformation;
-    }
-
-    @Column(name = "`Birth_Date`", nullable = false)
-    public Date getBirthDate() {
-        return this.birthDate;
-    }
-
-    public void setBirthDate(Date birthDate) {
-        this.birthDate = birthDate;
-    }
-
-    @Column(name = "`Current_City`", nullable = false, length = 255)
-    public String getCurrentCity() {
-        return this.currentCity;
-    }
-
-    public void setCurrentCity(String currentCity) {
-        this.currentCity = currentCity;
-    }
-
-    @Column(name = "`Current_Residence`", nullable = false, length = 255)
-    public String getCurrentResidence() {
-        return this.currentResidence;
-    }
-
-    public void setCurrentResidence(String currentResidence) {
-        this.currentResidence = currentResidence;
-    }
-
     @Column(name = "`FirstName`", nullable = false, length = 255)
     public String getFirstName() {
         return this.firstName;
@@ -109,33 +64,6 @@ public class Customers implements Serializable {
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
-    }
-
-    @Column(name = "`Gender`", nullable = false, length = 255)
-    public String getGender() {
-        return this.gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    @Column(name = "`LastName`", nullable = false, length = 255)
-    public String getLastName() {
-        return this.lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    @Column(name = "`Loan_Type`", nullable = false, length = 255)
-    public String getLoanType() {
-        return this.loanType;
-    }
-
-    public void setLoanType(String loanType) {
-        this.loanType = loanType;
     }
 
     @Column(name = "`MiddleName`", nullable = true, length = 255)
@@ -147,13 +75,31 @@ public class Customers implements Serializable {
         this.middleName = middleName;
     }
 
-    @Column(name = "`Occupation`", nullable = false, length = 255)
-    public String getOccupation() {
-        return this.occupation;
+    @Column(name = "`LastName`", nullable = false, length = 255)
+    public String getLastName() {
+        return this.lastName;
     }
 
-    public void setOccupation(String occupation) {
-        this.occupation = occupation;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    @Column(name = "`Birth_Date`", nullable = false)
+    public Date getBirthDate() {
+        return this.birthDate;
+    }
+
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
+    }
+
+    @Column(name = "`Aadhaar_Card`", nullable = false, length = 255)
+    public String getAadhaarCard() {
+        return this.aadhaarCard;
+    }
+
+    public void setAadhaarCard(String aadhaarCard) {
+        this.aadhaarCard = aadhaarCard;
     }
 
     @Column(name = "`PAN_Card`", nullable = false, length = 255)
@@ -165,6 +111,42 @@ public class Customers implements Serializable {
         this.panCard = panCard;
     }
 
+    @Column(name = "`Occupation`", nullable = false, length = 255)
+    public String getOccupation() {
+        return this.occupation;
+    }
+
+    public void setOccupation(String occupation) {
+        this.occupation = occupation;
+    }
+
+    @Column(name = "`Gender`", nullable = false, length = 255)
+    public String getGender() {
+        return this.gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    @Column(name = "`Current_Residence`", nullable = false, length = 255)
+    public String getCurrentResidence() {
+        return this.currentResidence;
+    }
+
+    public void setCurrentResidence(String currentResidence) {
+        this.currentResidence = currentResidence;
+    }
+
+    @Column(name = "`Current_City`", nullable = false, length = 255)
+    public String getCurrentCity() {
+        return this.currentCity;
+    }
+
+    public void setCurrentCity(String currentCity) {
+        this.currentCity = currentCity;
+    }
+
     @Column(name = "`Pincode`", nullable = false, scale = 0, precision = 10)
     public int getPincode() {
         return this.pincode;
@@ -172,6 +154,24 @@ public class Customers implements Serializable {
 
     public void setPincode(int pincode) {
         this.pincode = pincode;
+    }
+
+    @Column(name = "`Loan_Type`", nullable = false, length = 255)
+    public String getLoanType() {
+        return this.loanType;
+    }
+
+    public void setLoanType(String loanType) {
+        this.loanType = loanType;
+    }
+
+    @Column(name = "`Add_Information`", nullable = false, length = 255)
+    public String getAddInformation() {
+        return this.addInformation;
+    }
+
+    public void setAddInformation(String addInformation) {
+        this.addInformation = addInformation;
     }
 
     @ManyToOne(fetch = FetchType.EAGER)
