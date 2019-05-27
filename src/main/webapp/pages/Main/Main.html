@@ -1,36 +1,49 @@
-<wm-page name="mainpage" pagetitle="Main">
-    <wm-header content="header" name="header1"></wm-header>
-    <wm-content name="content" class="page">
-        <wm-page-content columnwidth="12" name="mainContent" class="page">
-            <wm-layoutgrid name="layoutgrid1">
-                <wm-gridrow name="gridrow1">
-                    <wm-gridcolumn columnwidth="4" name="gridcolumn1"></wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="4" name="gridcolumn2">
-                        <wm-container name="container5_1" width="330" backgroundcolor="#2a2d27" height="280" padding="10px unset unset unset">
-                            <wm-composite name="composite1" margin="40px unset unset unset">
-                                <wm-container class="col-md-9" name="container1">
-                                    <wm-text name="username" width="350" height="40" placeholder="UserName" autocomplete="false" margin="unset unset unset 35px"></wm-text>
-                                </wm-container>
-                            </wm-composite>
-                            <wm-composite name="composite4">
-                                <wm-container class="col-md-9" name="container4">
-                                    <wm-text width="350" height="40" name="email" placeholder="Email Id" autocomplete="false" margin="unset unset unset 35px"></wm-text>
-                                </wm-container>
-                            </wm-composite>
-                            <wm-composite name="composite5">
-                                <wm-container class="col-md-9" name="container5">
-                                    <wm-text width="350" height="40" name="phone" placeholder="Phone Number" autocomplete="false" margin="unset unset unset 35px"></wm-text>
-                                </wm-container>
-                            </wm-composite>
-                            <wm-button class="btn-default" caption="Create Account" type="button" margin="1em 0.5em unset 8em" name="button1" on-click="Variables.sendmail.invoke();Actions.goToPage_Login.invoke()" backgroundcolor="#a1e876" bordercolor="#a1e876" fontweight="bold"
-                                height="40"></wm-button>
-                        </wm-container>
-                    </wm-gridcolumn>
-                    <wm-gridcolumn columnwidth="4" name="gridcolumn3"></wm-gridcolumn>
-                </wm-gridrow>
-            </wm-layoutgrid>
+<wm-page layouttype="one-column" columns="1" name="page1" pagetitle="Login">
+    <wm-content name="content1" height="100%">
+        <wm-page-content columnwidth="12" name="column1" padding="0px" class="login">
+            <wm-container class="bg-primary" width="100%" height="100%" backgroundimage="resources/images/imagelists/login-bg.png" backgroundrepeat="no-repeat" backgroundposition="0 0" backgroundsize="100% 100%" backgroundattachment="fixed" name="loginPageContainer">
+                <wm-layoutgrid name="loginGrid" height="100%">
+                    <wm-gridrow name="gridrow7" height="15%">
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn10_2"></wm-gridcolumn>
+                    </wm-gridrow>
+                    <wm-gridrow name="gridrow6_1">
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn10_1" horizontalalign="center" class="col-xs-12" padding="unset unset 2em unset">
+                            <wm-picture name="picture1" picturesource="resources/images/imagelists/home-loan-icon.png" height="6em" on-click="Actions.goToPage_Home.invoke()"></wm-picture>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                    <wm-gridrow name="loginGridRow">
+                        <wm-gridcolumn columnwidth="3" name="gridcolumn8" class="col-xs-1 col-md-4"></wm-gridcolumn>
+                        <wm-gridcolumn name="loginContentColumn" columnwidth="6" class="col-xs-10  col-md-4">
+                            <wm-container name="container1" class="panel" backgroundcolor="#ffffff" color="#bdbdbd">
+                                <wm-label name="label1" caption="Sign Up" horizontalalign="center" class="p" backgroundcolor="#f7f7f7" margin="0px unset" fontsize="20" padding="1em unset" color="#1e1e1e"></wm-label>
+                                <wm-login name="loginForm" title="" autocomplete="nofill">
+                                    <wm-form name="form1">
+                                        <wm-layoutgrid name="layoutgrid2">
+                                            <wm-gridrow name="gridrow3">
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn7" padding="unset unset 1em unset">
+                                                    <wm-form-field widget="text" show="true" type="custom" name="form_field2" width="100%" placeholder="Email Address"></wm-form-field>
+                                                </wm-gridcolumn>
+                                            </wm-gridrow>
+                                            <wm-gridrow name="gridrow6">
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn14" class="col-xs-12">
+                                                    <wm-form-field widget="text" show="true" type="custom" name="form_field3" width="100%" placeholder="Enter Mobile Number"></wm-form-field>
+                                                </wm-gridcolumn>
+                                            </wm-gridrow>
+                                            <wm-gridrow name="gridrow4">
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn10">
+                                                    <wm-button type="submit" caption="Sign Up" width="100%" class="app-login-button btn-primary" name="loginButton" fontsize="1.2" fontunit="em" on-click="Actions.goToPage_Login.invoke()" fontweight="bold"></wm-button>
+                                                </wm-gridcolumn>
+                                            </wm-gridrow>
+                                            <wm-gridrow name="gridrow8"></wm-gridrow>
+                                        </wm-layoutgrid>
+                                    </wm-form>
+                                </wm-login>
+                            </wm-container>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="3" name="gridcolumn9" class="col-xs-1  col-md-4"></wm-gridcolumn>
+                    </wm-gridrow>
+                </wm-layoutgrid>
+            </wm-container>
         </wm-page-content>
     </wm-content>
-    <wm-footer content="footer" name="footer1"></wm-footer>
-    <wm-iframedialog name="iframedialog1"></wm-iframedialog>
 </wm-page>

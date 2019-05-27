@@ -19,7 +19,7 @@
   "type" : "PAGE",
   "params" : [ ]
 }, {
-  "name" : "Userflow",
+  "name" : "Profile",
   "type" : "PAGE",
   "params" : [ ]
 }, {
@@ -35,10 +35,6 @@
   "type" : "LEFTNAV",
   "params" : [ ]
 }, {
-  "name" : "loandetailspage",
-  "type" : "PAGE",
-  "params" : [ ]
-}, {
   "name" : "login_in",
   "type" : "PARTIAL",
   "params" : [ ]
@@ -47,15 +43,7 @@
   "type" : "RIGHTNAV",
   "params" : [ ]
 }, {
-  "name" : "test",
-  "type" : "PAGE",
-  "params" : [ ]
-}, {
   "name" : "topnav",
   "type" : "TOPNAV",
-  "params" : [ ]
-}, {
-  "name" : "website",
-  "type" : "PAGE",
   "params" : [ ]
 } ]

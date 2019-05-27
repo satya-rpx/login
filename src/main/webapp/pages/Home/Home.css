@@ -1,0 +1,36 @@
+.wm-buttonimg 
+{
+    margin-top: 50px;
+}
+.wm-app .page
+{
+    padding: 0px;
+}
+
+.wm-container17_1{
+    padding-top: 0px;
+}
+
+.page {
+    padding-bottom: 20px;
+}
+
+.page
+{
+    position: fixed; 
+    overflow-y: scroll;
+    overflow-x: hidden; 
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.app-tabs .tab-content .tab-pane .tab-body {
+    position: relative;
+    border-width: 0 1px 1px;
+    border-style: solid;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    white-space: normal;
+}

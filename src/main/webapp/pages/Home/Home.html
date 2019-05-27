@@ -1,215 +1,172 @@
-<wm-page pagetitle="Home" name="page1">
-    <wm-header content="header" name="header1"></wm-header>
-    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav>
-    <wm-content name="content1">
-        <wm-page-content columnwidth="12" name="page_content1" backgroundsize="100%,30%" backgroundrepeat="no-repeat">
-            <wm-container name="container1">
-                <wm-tabs name="tabs1">
-                    <wm-tabpane name="tabpane1" title="User Profile">
-                        <wm-liveform errormessage="" title="Customers Info" iconclass="wi wi-edit" defaultmode="View" dataset="bind:Variables.DbloanCustomers.dataSet" captionalign="left" captionposition="top" name="CustomersLiveForm1">
-                            <wm-layoutgrid columns="3" name="layoutgrid1">
-                                <wm-gridrow name="gridrow1">
-                                    <wm-gridcolumn columnwidth="4" name="gridcolumn1">
-                                        <wm-form-field name="firstName" displayname="First Name :" required="true" show="true" generator="assigned" primary-key="false" key="firstName" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
-                                            widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].firstName"></wm-form-field>
-                                    </wm-gridcolumn>
-                                    <wm-gridcolumn columnwidth="4" name="gridcolumn2">
-                                        <wm-form-field name="middleName" displayname="Middle Name :" required="false" show="true" generator="assigned" primary-key="false" key="middleName" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
-                                            widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].middleName"></wm-form-field>
-                                    </wm-gridcolumn>
-                                    <wm-gridcolumn columnwidth="4" name="gridcolumn3">
-                                        <wm-form-field name="lastName" displayname="Last Name :" required="true" show="true" generator="assigned" primary-key="false" key="lastName" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
-                                            widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].lastName"></wm-form-field>
-                                    </wm-gridcolumn>
-                                </wm-gridrow>
-                                <wm-gridrow name="gridrow2">
-                                    <wm-gridcolumn columnwidth="4" name="gridcolumn4">
-                                        <wm-form-field name="birthDate" displayname="Birth Date :" required="true" show="true" generator="assigned" primary-key="false" key="birthDate" type="date" is-related="false" pc-display="true" mobile-display="true"
-                                            widget="date" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].birthDate"></wm-form-field>
-                                    </wm-gridcolumn>
-                                    <wm-gridcolumn columnwidth="4" name="gridcolumn5">
-                                        <wm-form-field name="panCard" displayname="Pan Card :" required="true" show="true" generator="assigned" primary-key="false" key="panCard" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
-                                            widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].panCard"></wm-form-field>
-                                    </wm-gridcolumn>
-                                    <wm-gridcolumn columnwidth="4" name="gridcolumn6">
-                                        <wm-form-field name="occupation" displayname="Occupation :" required="true" show="true" generator="assigned" primary-key="false" key="occupation" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
-                                            widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].occupation"></wm-form-field>
-                                    </wm-gridcolumn>
-                                </wm-gridrow>
-                                <wm-gridrow name="gridrow3">
-                                    <wm-gridcolumn columnwidth="4" name="gridcolumn7">
-                                        <wm-form-field name="gender" displayname="Gender :" required="true" show="true" generator="assigned" primary-key="false" key="gender" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
-                                            widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].gender"></wm-form-field>
-                                    </wm-gridcolumn>
-                                    <wm-gridcolumn columnwidth="4" name="gridcolumn8">
-                                        <wm-form-field name="currentResidence" displayname="Current Residence" required="true" show="true" generator="assigned" primary-key="false" key="currentResidence" type="string" is-related="false" maxchars="255" pc-display="true"
-                                            mobile-display="true" widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].currentResidence"></wm-form-field>
-                                    </wm-gridcolumn>
-                                    <wm-gridcolumn columnwidth="4" name="gridcolumn9">
-                                        <wm-form-field name="currentCity" displayname="Current City :" required="true" show="true" generator="assigned" primary-key="false" key="currentCity" type="string" is-related="false" maxchars="255" pc-display="true"
-                                            mobile-display="true" widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].currentCity"></wm-form-field>
-                                    </wm-gridcolumn>
-                                </wm-gridrow>
-                                <wm-gridrow name="gridrow4">
-                                    <wm-gridcolumn columnwidth="4" name="gridcolumn10">
-                                        <wm-form-field name="pincode" displayname="Pincode :" required="true" show="true" generator="assigned" primary-key="false" key="pincode" type="integer" is-related="false" step="0" pc-display="true" mobile-display="true"
-                                            widget="number" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].pincode"></wm-form-field>
-                                    </wm-gridcolumn>
-                                    <wm-gridcolumn columnwidth="4" name="gridcolumn11">
-                                        <wm-form-field name="loanType" displayname="Loan Type :" required="true" show="true" generator="assigned" primary-key="false" key="loanType" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true"
-                                            widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].loanType"></wm-form-field>
-                                    </wm-gridcolumn>
-                                    <wm-gridcolumn columnwidth="4" name="gridcolumn12">
-                                        <wm-form-field name="addInformation" displayname="Add Information :" required="true" show="true" generator="assigned" primary-key="false" key="addInformation" type="string" is-related="false" maxchars="255" pc-display="true"
-                                            mobile-display="true" widget="text" defaultvalue="bind:Variables.DbloanCustomers.dataSet[$i].addInformation"></wm-form-field>
-                                    </wm-gridcolumn>
-                                </wm-gridrow>
-                                <wm-gridrow name="gridrow5"></wm-gridrow>
-                            </wm-layoutgrid>
-                            <wm-form-field name="customerid" displayname="Customerid" required="true" show="false" generator="identity" primary-key="true" key="customerid" type="integer" is-related="false" step="0" pc-display="true" mobile-display="true"
-                                widget="number"></wm-form-field>
-                            <wm-form-action key="cancel" class="form-cancel btn-secondary" iconclass="wi wi-cancel" action="cancel()" display-name="Cancel" show="true" type="button" update-mode="true"></wm-form-action>
-                            <wm-form-action key="save" class="form-save btn-success" iconclass="wi wi-save" display-name="Save" show="true" type="submit" update-mode="true"></wm-form-action>
-                        </wm-liveform>
-                    </wm-tabpane>
-                    <wm-tabpane name="tabpane2" title="Polices">
-                        <wm-layoutgrid name="layoutgrid4">
-                            <wm-gridrow name="gridrow12">
-                                <wm-gridcolumn columnwidth="6" name="gridcolumn28">
-                                    <wm-label padding="unset 0.5em" name="label9" caption="Current Home Loan Interest Rates" class="h2"></wm-label>
-                                </wm-gridcolumn>
-                                <wm-gridcolumn columnwidth="6" name="gridcolumn29"></wm-gridcolumn>
-                            </wm-gridrow>
-                            <wm-gridrow name="gridrow13">
-                                <wm-gridcolumn columnwidth="6" name="gridcolumn30">
-                                    <wm-label padding="unset 0.5em" name="label10" caption="* Loan Upto 20 Lakh" class="h4"></wm-label>
-                                </wm-gridcolumn>
-                                <wm-gridcolumn columnwidth="6" name="gridcolumn31">
-                                    <wm-label padding="unset 0.5em" name="label16" caption="8.65% to 9.15%" class="h4"></wm-label>
-                                </wm-gridcolumn>
-                            </wm-gridrow>
-                            <wm-gridrow name="gridrow14">
-                                <wm-gridcolumn columnwidth="6" name="gridcolumn32">
-                                    <wm-label padding="unset 0.5em" name="label11" caption="* 20.01 lakhs to 30 lakhs" class="h4"></wm-label>
-                                </wm-gridcolumn>
-                                <wm-gridcolumn columnwidth="6" name="gridcolumn33">
-                                    <wm-label padding="unset 0.5em" name="label17_1" caption="8.70% to 9.2%" class="h4"></wm-label>
-                                </wm-gridcolumn>
-                            </wm-gridrow>
-                            <wm-gridrow name="gridrow15">
-                                <wm-gridcolumn columnwidth="6" name="gridcolumn34">
-                                    <wm-label padding="unset 0.5em" name="label12" caption="* 30.01 lakhs to 40 lakhs" class="h4"></wm-label>
-                                </wm-gridcolumn>
-                                <wm-gridcolumn columnwidth="6" name="gridcolumn35">
-                                    <wm-label padding="unset 0.5em" name="label18" caption="8.90% to 9.40%" class="h4"></wm-label>
-                                </wm-gridcolumn>
-                            </wm-gridrow>
-                            <wm-gridrow name="gridrow16">
-                                <wm-gridcolumn columnwidth="6" name="gridcolumn36">
-                                    <wm-label padding="unset 0.5em" name="label14" caption="* 40.01 lakhs to 50 lakhs" class="h4"></wm-label>
-                                </wm-gridcolumn>
-                                <wm-gridcolumn columnwidth="6" name="gridcolumn37">
-                                    <wm-label padding="unset 0.5em" name="label19" caption="8.95% to 9.45%" class="h4"></wm-label>
-                                </wm-gridcolumn>
-                            </wm-gridrow>
-                            <wm-gridrow name="gridrow17">
-                                <wm-gridcolumn columnwidth="6" name="gridcolumn38">
-                                    <wm-label padding="unset 0.5em" name="label15" caption="* 50.01 lakhs to 60 lakhs" class="h4"></wm-label>
-                                </wm-gridcolumn>
-                                <wm-gridcolumn columnwidth="6" name="gridcolumn39">
-                                    <wm-label padding="unset 0.5em" name="label20" caption="8.95% to 9.45%" class="h4"></wm-label>
-                                </wm-gridcolumn>
-                            </wm-gridrow>
-                            <wm-gridrow name="gridrow18">
-                                <wm-gridcolumn columnwidth="6" name="gridcolumn40">
-                                    <wm-label padding="unset 0.5em" name="label17" caption="* 60.01 lakhs &amp; above" class="h4"></wm-label>
-                                </wm-gridcolumn>
-                                <wm-gridcolumn columnwidth="6" name="gridcolumn41">
-                                    <wm-label padding="unset 0.5em" name="label21" caption="9.00% to 9.50%" class="h4"></wm-label>
-                                </wm-gridcolumn>
-                            </wm-gridrow>
-                        </wm-layoutgrid>
-                    </wm-tabpane>
-                    <wm-tabpane name="tabpane3" title="APPLY LOAN">
-                        <wm-content name="content1">
-                            <wm-page-content columnwidth="12" name="page_content1" backgroundposition="ce">
-                                <wm-label padding="unset 0.5em" name="label1" caption="Loan Details:" class="h2"></wm-label>
-                                <wm-layoutgrid name="layoutgrid1">
-                                    <wm-gridrow name="gridrow1">
-                                        <wm-gridcolumn columnwidth="6" name="gridcolumn1">
-                                            <wm-composite name="composite1">
-                                                <wm-label class="col-md-3 control-label h5" name="label2" caption="Loan Amount:" fontweight="bold"></wm-label>
-                                                <wm-container class="col-md-9" name="container1">
-                                                    <wm-text name="text1" placeholder="Enter required amount" type="number" autocomplete="false"></wm-text>
-                                                </wm-container>
-                                            </wm-composite>
-                                        </wm-gridcolumn>
-                                        <wm-gridcolumn columnwidth="6" name="gridcolumn2">
-                                            <wm-composite name="composite2">
-                                                <wm-label class="col-md-3 control-label h5" name="label3" caption="Loan Tenure" fontweight="bold"></wm-label>
-                                                <wm-container class="col-md-9" name="container2">
-                                                    <wm-text name="text2" type="number" placeholder="Enter loan tenure" autocomplete="false"></wm-text>
-                                                </wm-container>
-                                            </wm-composite>
-                                        </wm-gridcolumn>
-                                    </wm-gridrow><br></wm-layoutgrid>
-                                <wm-label padding="unset 0.5em" name="label4" caption="Required Documents:" class="h2"></wm-label>
-                                <wm-layoutgrid name="layoutgrid2">
-                                    <wm-gridrow name="gridrow3">
-                                        <wm-gridcolumn columnwidth="4" name="gridcolumn6">
-                                            <wm-label padding="unset 0.5em" name="label5" caption="1. Aadhar Card" class="h4"></wm-label>
-                                        </wm-gridcolumn>
-                                        <wm-gridcolumn columnwidth="4" name="gridcolumn7">
-                                            <wm-fileupload name="fileupload1" on-select="Variables.FileServiceUploadFile.invoke()"></wm-fileupload>
-                                        </wm-gridcolumn>
-                                        <wm-gridcolumn columnwidth="4" name="gridcolumn14"></wm-gridcolumn>
-                                    </wm-gridrow>
-                                    <wm-gridrow name="gridrow4">
-                                        <wm-gridcolumn columnwidth="4" name="gridcolumn8">
-                                            <wm-label padding="unset 0.5em" name="label6" caption="2. PAN Card" class="h4"></wm-label>
-                                        </wm-gridcolumn>
-                                        <wm-gridcolumn columnwidth="4" name="gridcolumn9">
-                                            <wm-fileupload name="fileupload2" on-select="Variables.FileServiceUploadFile1.invoke()"></wm-fileupload>
-                                        </wm-gridcolumn>
-                                        <wm-gridcolumn columnwidth="4" name="gridcolumn15"></wm-gridcolumn>
-                                    </wm-gridrow>
-                                    <wm-gridrow name="gridrow5">
-                                        <wm-gridcolumn columnwidth="4" name="gridcolumn10">
-                                            <wm-label padding="unset 0.5em" name="label7" caption="3. Property Document" class="h4"></wm-label>
-                                        </wm-gridcolumn>
-                                        <wm-gridcolumn columnwidth="4" name="gridcolumn11">
-                                            <wm-fileupload name="fileupload3" on-select="Variables.FileServiceUploadFile2.invoke()"></wm-fileupload>
-                                        </wm-gridcolumn>
-                                        <wm-gridcolumn columnwidth="4" name="gridcolumn16"></wm-gridcolumn>
-                                    </wm-gridrow>
-                                    <wm-gridrow name="gridrow6">
-                                        <wm-gridcolumn columnwidth="4" name="gridcolumn12">
-                                            <wm-label padding="unset 0.5em" name="label8" caption="4. Form 16" class="h4"></wm-label>
-                                        </wm-gridcolumn>
-                                        <wm-gridcolumn columnwidth="4" name="gridcolumn13">
-                                            <wm-fileupload name="fileupload4" on-select="Variables.FileServiceUploadFile3.invoke()"></wm-fileupload>
-                                        </wm-gridcolumn>
-                                        <wm-gridcolumn columnwidth="4" name="gridcolumn17"></wm-gridcolumn>
-                                    </wm-gridrow>
-                                    <wm-gridrow name="gridrow7">
-                                        <wm-gridcolumn columnwidth="12" name="gridcolumn4" horizontalalign="center">
-                                            <wm-button class="btn-default btn-success" caption="SUBMIT" type="button" margin="unset 0.5em" name="button1" backgroundposition="center,top" on-click="Variables.FILEUPLOADNEWVARIABLE.createRecord();button1Click($event, widget);Variables.FileServiceListFiles.invoke()"></wm-button>
-                                        </wm-gridcolumn>
-                                    </wm-gridrow>
-                                </wm-layoutgrid>
-                                <wm-table name="listFilesTable1" title="" dataset="bind:Variables.FileServiceListFiles.dataSet" navigation="Basic">
-                                    <wm-table-column binding="size" caption="Size" pcdisplay="true" mobiledisplay="true" type="long"></wm-table-column>
-                                    <wm-table-column binding="path" caption="Path" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
-                                    <wm-table-column binding="inlinePath" caption="Inline Path" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
-                                    <wm-table-column binding="type" caption="Type" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
-                                    <wm-table-column binding="name" caption="Name" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
-                                </wm-table>
-                            </wm-page-content>
-                        </wm-content>
-                    </wm-tabpane>
-                </wm-tabs>
+<wm-page pagetitle="Website" name="page1">
+    <wm-content name="content1" class="page">
+        <wm-page-content columnwidth="12" name="page_content1" class="page"><br><br>
+            <wm-container name="container11_1">
+                <wm-container name="container14" width="400">
+                    <wm-container backgroundimage="resources/images/imagelists/offer-banner01.png" color="#3f9e5f" name="container15" margin="-30px unset unset unset" borderwidth="0.5px" width="1300" height="400">
+                        <wm-container name="container16_1">
+                            <wm-picture picturesource="resources/images/imagelists/home-loan-icon.png" padding="-20px unset unset unset" margin="20px unset unset 10px" height="75" width="90" name="picture2" on-click="Actions.goToPage_Home.invoke()"></wm-picture>
+                        </wm-container>
+                        <wm-container margin="50px unset unset unset" name="container16" width="950">
+                            <wm-label padding="unset 0.5em" caption="Move into your dream House" fontsize="34" fontweight="bold" textalign="left" color="#161917" width="950" name="label15"></wm-label>
+                            <wm-container name="container32">
+                                <wm-label padding="unset 0.5em" caption="We offer an easy-to-apply home loan with attractive interest rates," fontsize="18" color="#913969" fontweight="bold" name="label17"></wm-label>
+                            </wm-container>
+                        </wm-container>
+                        <wm-container name="container17">
+                            <wm-label padding="unset 0.5em" caption="" name="label16"></wm-label>
+                            <wm-label padding="unset 0.5em" name="label13" caption="to turn your dream into reality." fontsize="17" margin="unset unset unset 12px" color="#913969" fontweight="bold"></wm-label>
+                        </wm-container>
+                        <wm-container name="container17_1" margin="20px unset unset unset">
+                            <wm-button class="btn-default" caption="Apply Loan" type="button" margin="unset 0.5em unset 2em" name="button2" width="180" height="45" backgroundcolor="#d77936" fontsize="22" color="#4c3c3c" fontweight="bold" bordercolor="#d77936"
+                                borderstyle="solid" borderwidth="unset unset unset 0.5px" on-click="Actions.goToPage_Login.invoke()"></wm-button>
+                        </wm-container>
+                    </wm-container>
+                </wm-container>
+            </wm-container>
+            <!--  <wm-container name="container1" width="100%"><wm-layoutgrid name="layoutgrid1"><wm-gridrow name="gridrow1"><wm-gridcolumn columnwidth="12" name="gridcolumn1"><wm-label padding="unset 0.5em" name="label1" caption="EMI Calculator" class="h1" textalign="center" fontweight="bold" color="#96e099" backgroundcolor="#2f2828"></wm-label></wm-gridcolumn></wm-gridrow><wm-gridrow name="gridrow2"></wm-gridrow></wm-layoutgrid><wm-layoutgrid name="layoutgrid2"><wm-gridrow name="gridrow3"><wm-gridcolumn columnwidth="4" name="gridcolumn9"><wm-label padding="unset 0.5em" name="label3" caption="Loan Amount" fontweight="bold" textalign="center" width="100%" class="h6" fontsize="14"></wm-label><wm-composite name="composite2"><wm-container class="col-md-9" name="container3"><wm-slider name="slider2" width="125%" minvalue="100000" maxvalue="50000000" datavalue="100000" step="1" class="slider" id="amount" on-change="slider2Change($event, widget, newVal, oldVal)"></wm-slider></wm-container></wm-composite><wm-composite name="composite8"><wm-label class="col-md-3 control-label" name="label10_1" caption="Rs." fontweight="bold" padding="10px unset unset 75px"></wm-label><wm-container class="col-md-9" name="container9"><wm-text name="text5_1" maxchars="9" pattern="[0-9]*" datavalue="bind:Widgets.slider2.datavalue" fontsize="18" width="200"></wm-text></wm-container></wm-composite></wm-gridcolumn><wm-gridcolumn columnwidth="4" name="gridcolumn5"><wm-label padding="unset 0.5em" name="label3_1" width="100%" fontweight="bold" textalign="center" caption="Loan Tenure" class="h6" fontsize="14"></wm-label><wm-composite name="composite2_1"><wm-container class="col-md-9" name="container3_1"><wm-slider name="slider2_1" width="125%" datavalue="1" minvalue="1" maxvalue="30" step="1" id="years" onchange="computedEmi()" on-change="slider2_1Change($event, widget, newVal, oldVal)"></wm-slider></wm-container></wm-composite><wm-composite name="composite9_1"><wm-label class="col-md-3 control-label" name="label11_1" caption="Years" fontweight="bold" padding="10px unset unset 60px"></wm-label><wm-container class="col-md-9" name="container10_1"><wm-text name="text6" maxchars="9" pattern="[0-9]*" datavalue="bind:Widgets.slider2_1.datavalue" fontsize="18" width="200"></wm-text></wm-container></wm-composite></wm-gridcolumn><wm-gridcolumn columnwidth="4" name="gridcolumn6"><wm-label padding="unset 0.5em" name="label7" width="100%" caption="Interest Rate" class="h6" fontweight="bold" textalign="center" fontsize="14"></wm-label><wm-composite name="composite4"><wm-container class="col-md-9" name="container5"><wm-slider name="slider4" width="125%" datavalue="1" minvalue="1" maxvalue="15" step="0.05" id="roi" onchange="computedEmi()" on-change="slider4Change($event, widget, newVal, oldVal)"></wm-slider></wm-container></wm-composite><wm-composite name="composite10"><wm-label class="col-md-3 control-label" name="label12" caption="%" fontweight="bold" padding="10px unset unset 80px"></wm-label><wm-container class="col-md-9" name="container11"><wm-text name="text7" maxchars="9" pattern="[0-9]*" datavalue="bind:Widgets.slider4.datavalue" fontsize="18" width="200"></wm-text></wm-container></wm-composite></wm-gridcolumn></wm-gridrow><wm-gridrow name="gridrow4"></wm-gridrow></wm-layoutgrid><wm-container name="container10_2"></wm-container><wm-container name="container11_1"></wm-container></wm-container><wm-label padding="unset 0.5em" name="label10" margin="50px unset unset 520px" caption="Your Loan EMI will be" textalign="left" fontweight="bold" class="h4" fontsize="18"></wm-label><wm-composite name="composite9" width="300" margin="unset unset unset 470px"><wm-label class="col-md-3 control-label" name="label11" caption="Rs." width="50" padding="10px unset unset 20px"></wm-label><wm-container class="col-md-9" name="container10" width="200"><wm-text name="text5" value="8,378.54" id="emi" width="200" fontweight="bold" fontsize="18" placeholder=""></wm-text></wm-container></wm-composite> --><br><br>
+            <wm-container name="container18">
+                <wm-container name="container11_1">
+                    <wm-container name="container11_1" class="caltab">
+                        <wm-tabs name="tabs1" height="400">
+                            <wm-tabpane name="tabpane1" title="EMI Calculator" bordercolor="#1a1313">
+                                <wm-container name="container1">
+                                    <wm-layoutgrid name="layoutgrid1">
+                                        <wm-gridrow name="gridrow1">
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn1">
+                                                <wm-label padding="unset 0.5em" name="label1" caption="EMI Calculator" class="h1" textalign="center" fontweight="bold" backgroundcolor="#daf49c"></wm-label>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                        <wm-gridrow name="gridrow2"></wm-gridrow>
+                                    </wm-layoutgrid>
+                                    <wm-layoutgrid name="layoutgrid2">
+                                        <wm-gridrow name="gridrow3">
+                                            <wm-gridcolumn columnwidth="4" name="gridcolumn9">
+                                                <wm-label padding="unset 0.5em" name="label3" caption="Loan Amount" fontweight="bold" textalign="center" width="100%" class="h6" fontsize="14"></wm-label>
+                                                <wm-composite name="composite2">
+                                                    <wm-container class="col-md-9" name="container3">
+                                                        <wm-slider name="slider2" width="125%" minvalue="100000" maxvalue="50000000" datavalue="100000" step="1" class="slider" id="amount" on-change="slider2Change($event, widget, newVal, oldVal)"></wm-slider>
+                                                    </wm-container>
+                                                </wm-composite>
+                                                <wm-composite name="composite8">
+                                                    <wm-label class="col-md-3 control-label" name="label10_1" caption="Rs." fontweight="bold" padding="10px unset unset 75px"></wm-label>
+                                                    <wm-container class="col-md-9" name="container9">
+                                                        <wm-text name="text5_1" maxchars="9" pattern="[0-9]*" datavalue="bind:Widgets.slider2.datavalue" maxvalue="50000000" fontsize="18" width="200" backgroundcolor="#93cdd8"></wm-text>
+                                                    </wm-container>
+                                                </wm-composite>
+                                            </wm-gridcolumn>
+                                            <wm-gridcolumn columnwidth="4" name="gridcolumn5">
+                                                <wm-label padding="unset 0.5em" name="label3_1" width="100%" fontweight="bold" textalign="center" caption="Loan Tenure" class="h6" fontsize="14"></wm-label>
+                                                <wm-composite name="composite2_1">
+                                                    <wm-container class="col-md-9" name="container3_1">
+                                                        <wm-slider name="slider2_1" width="125%" datavalue="1" minvalue="1" maxvalue="30" step="1" id="years" onchange="computedEmi()" on-change="slider2_1Change($event, widget, newVal, oldVal)"></wm-slider>
+                                                    </wm-container>
+                                                </wm-composite>
+                                                <wm-composite name="composite9_1">
+                                                    <wm-label class="col-md-3 control-label" name="label11_1" caption="Years" fontweight="bold" padding="10px unset unset 60px"></wm-label>
+                                                    <wm-container class="col-md-9" name="container10_1">
+                                                        <wm-text name="text6" maxchars="9" pattern="[0-9]*" datavalue="bind:Widgets.slider2_1.datavalue" fontsize="18" width="200" backgroundcolor="#93cdd8"></wm-text>
+                                                    </wm-container>
+                                                </wm-composite>
+                                            </wm-gridcolumn>
+                                            <wm-gridcolumn columnwidth="4" name="gridcolumn6">
+                                                <wm-label padding="unset 0.5em" name="label7" width="100%" caption="Interest Rate" class="h6" fontweight="bold" textalign="center" fontsize="14"></wm-label>
+                                                <wm-composite name="composite4">
+                                                    <wm-container class="col-md-9" name="container5">
+                                                        <wm-slider name="slider4" width="125%" datavalue="1" minvalue="1" maxvalue="15" step="0.05" id="roi" onchange="computedEmi()" on-change="slider4Change($event, widget, newVal, oldVal)"></wm-slider>
+                                                    </wm-container>
+                                                </wm-composite>
+                                                <wm-composite name="composite10">
+                                                    <wm-label class="col-md-3 control-label" name="label12" caption="%" fontweight="bold" padding="10px unset unset 80px"></wm-label>
+                                                    <wm-container class="col-md-9" name="container11">
+                                                        <wm-text name="text7" maxchars="9" pattern="[0-9]*" datavalue="bind:Widgets.slider4.datavalue" fontsize="18" width="200" backgroundcolor="#93cdd8"></wm-text>
+                                                    </wm-container>
+                                                </wm-composite>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                        <wm-gridrow name="gridrow4"></wm-gridrow>
+                                    </wm-layoutgrid>
+                                </wm-container>
+                                <wm-label padding="unset 0.5em" name="label10" margin="50px unset unset 520px" caption="Your Loan EMI will be" textalign="left" fontweight="bold" class="h4" fontsize="18"></wm-label>
+                                <wm-composite name="composite9" width="300" margin="unset unset unset 470px">
+                                    <wm-label class="col-md-3 control-label" name="label11" caption="Rs." width="50" padding="10px unset unset 20px"></wm-label>
+                                    <wm-container class="col-md-9" name="container10" width="200">
+                                        <wm-text name="text5" value="8,378.54" id="emi" width="200" fontweight="bold" fontsize="18" placeholder="" backgroundcolor="#c4b64c"></wm-text>
+                                    </wm-container>
+                                </wm-composite>
+                            </wm-tabpane>
+                            <wm-tabpane name="tabpane2" title="Eligibility Checking">
+                                <wm-container name="container12">
+                                    <wm-container name="container1">
+                                        <wm-layoutgrid name="layoutgrid1">
+                                            <wm-gridrow name="gridrow1">
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn1">
+                                                    <wm-label padding="unset 0.5em" name="label1" caption="Eligibility Checking" class="h1" textalign="center" fontweight="bold" backgroundcolor="#daf49c"></wm-label>
+                                                </wm-gridcolumn>
+                                            </wm-gridrow>
+                                            <wm-gridrow name="gridrow2"></wm-gridrow>
+                                        </wm-layoutgrid>
+                                        <wm-layoutgrid name="layoutgrid2">
+                                            <wm-gridrow name="gridrow3">
+                                                <wm-gridcolumn columnwidth="4" name="gridcolumn9">
+                                                    <wm-label padding="unset 0.5em" name="label3" caption="Monthly Income" fontweight="bold" textalign="center" width="100%" class="h6" fontsize="14"></wm-label>
+                                                    <wm-composite name="composite2">
+                                                        <wm-container class="col-md-9" name="container3">
+                                                            <wm-slider name="slider11" width="125%" minvalue="10000" maxvalue="500000" datavalue="10000" step="1000" class="slider" id="amount" on-change="slider11Change($event, widget, newVal, oldVal)"></wm-slider>
+                                                        </wm-container>
+                                                    </wm-composite>
+                                                    <wm-composite name="composite8">
+                                                        <wm-label class="col-md-3 control-label" name="label10_1" caption="Rs." fontweight="bold" padding="10px unset unset 75px"></wm-label>
+                                                        <wm-container class="col-md-9" name="container9">
+                                                            <wm-text name="text11" maxchars="9" pattern="[0-9]*" datavalue="bind:Widgets.slider11.datavalue" fontsize="18" width="200" backgroundcolor="#93cdd8"></wm-text>
+                                                        </wm-container>
+                                                    </wm-composite>
+                                                </wm-gridcolumn>
+                                                <wm-gridcolumn columnwidth="4" name="gridcolumn5">
+                                                    <wm-label padding="unset 0.5em" name="label3_1" width="100%" fontweight="bold" textalign="center" caption="Loan Tenure" class="h6" fontsize="14"></wm-label>
+                                                    <wm-composite name="composite2_1">
+                                                        <wm-container class="col-md-9" name="container3_1">
+                                                            <wm-slider name="slider22" width="125%" datavalue="1" minvalue="1" maxvalue="30" step="1" id="years" on-change="slider22Change($event, widget, newVal, oldVal)"></wm-slider>
+                                                        </wm-container>
+                                                    </wm-composite>
+                                                    <wm-composite name="composite9_1">
+                                                        <wm-label class="col-md-3 control-label" name="label11_1" caption="Years" fontweight="bold" padding="10px unset unset 60px"></wm-label>
+                                                        <wm-container class="col-md-9" name="container10_1">
+                                                            <wm-text name="text22" maxchars="9" pattern="[0-9]*" datavalue="bind:Widgets.slider22.datavalue" fontsize="18" width="200" backgroundcolor="#93cdd8"></wm-text>
+                                                        </wm-container>
+                                                    </wm-composite>
+                                                </wm-gridcolumn>
+                                                <wm-gridcolumn columnwidth="4" name="gridcolumn6">
+                                                    <wm-label padding="unset 0.5em" name="label7" width="100%" caption="Your Age" class="h6" fontweight="bold" textalign="center" fontsize="14"></wm-label>
+                                                    <wm-composite name="composite4">
+                                                        <wm-container class="col-md-9" name="container5">
+                                                            <wm-slider name="slider33" width="125%" datavalue="21" minvalue="21" maxvalue="56" step="1" on-change="slider33Change($event, widget, newVal, oldVal)"></wm-slider>
+                                                        </wm-container>
+                                                    </wm-composite>
+                                                    <wm-composite name="composite10">
+                                                        <wm-label class="col-md-3 control-label" name="label12" caption="Age" fontweight="bold" padding="10px unset unset 80px"></wm-label>
+                                                        <wm-container class="col-md-9" name="container11">
+                                                            <wm-text name="text33" maxchars="9" pattern="[0-9]*" datavalue="bind:Widgets.slider33.datavalue" fontsize="18" width="200" backgroundcolor="#93cdd8"></wm-text>
+                                                        </wm-container>
+                                                    </wm-composite>
+                                                </wm-gridcolumn>
+                                            </wm-gridrow>
+                                            <wm-gridrow name="gridrow4"></wm-gridrow>
+                                        </wm-layoutgrid>
+                                    </wm-container>
+                                    <wm-label padding="unset 0.5em" name="label10" margin="50px unset unset 520px" caption="Your are eligible for loan amount:" textalign="left" fontweight="bold" class="h4" fontsize="18"></wm-label>
+                                    <wm-composite name="composite9" width="300" margin="unset unset unset 470px">
+                                        <wm-label class="col-md-3 control-label" name="label11" caption="Rs." width="50" padding="10px unset unset 20px"></wm-label>
+                                        <wm-container class="col-md-9" name="container10" width="200">
+                                            <wm-text name="text44" value="8,378.54" id="emi" width="200" fontweight="bold" fontsize="18" placeholder="" backgroundcolor="#c4b64c"></wm-text>
+                                        </wm-container>
+                                    </wm-composite>
+                                </wm-container>
+                            </wm-tabpane>
+                        </wm-tabs>
+                    </wm-container>
+                </wm-container>
             </wm-container>
         </wm-page-content>
     </wm-content>
-    <wm-footer content="footer" name="footer1"></wm-footer>
 </wm-page>
