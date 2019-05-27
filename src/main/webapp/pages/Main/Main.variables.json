@@ -101,6 +101,30 @@
     "inputFields" : { },
     "package" : "com.login.dbloan.Table1"
   },
+  "notificationAction1" : {
+    "_id" : "wm-notificationAction1-wm.NotificationVariable-1558942404319",
+    "name" : "notificationAction1",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "text",
+      "value" : "Account created Successfully! Check the mail for login credentials",
+      "type" : "string"
+    }, {
+      "target" : "title",
+      "value" : "sign up alert",
+      "type" : "string"
+    }, {
+      "target" : "okButtonText",
+      "value" : "ok",
+      "type" : "string"
+    }, {
+      "target" : "alerttype",
+      "value" : "success",
+      "type" : "string"
+    } ],
+    "operation" : "alert"
+  },
   "sendmail" : {
     "_id" : "wm-sendmail-wm.ServiceVariable-1558341804587",
     "name" : "sendmail",

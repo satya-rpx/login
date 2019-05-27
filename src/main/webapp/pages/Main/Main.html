@@ -30,8 +30,8 @@
                                                 </wm-gridcolumn>
                                             </wm-gridrow>
                                             <wm-gridrow name="gridrow4">
-                                                <wm-gridcolumn columnwidth="12" name="gridcolumn10">
-                                                    <wm-button type="submit" caption="Sign Up" width="100%" class="app-login-button btn-primary" name="loginButton" fontsize="1.2" fontunit="em" on-click="Actions.goToPage_Login.invoke()" fontweight="bold"></wm-button>
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumn10" padding="10px unset unset unset">
+                                                    <wm-button type="submit" caption="Sign Up" width="100%" class="app-login-button btn-primary" name="loginButton" fontsize="1.2" fontunit="em" fontweight="bold" on-click="loginButtonClick($event, widget)"></wm-button>
                                                 </wm-gridcolumn>
                                             </wm-gridrow>
                                             <wm-gridrow name="gridrow8"></wm-gridrow>
@@ -46,4 +46,6 @@
             </wm-container>
         </wm-page-content>
     </wm-content>
+    <wm-alertdialog name="notificationalertdialog" notificationdialog="alert" message="bind:notification.text" title="bind:notification.title" oktext="bind:notification.okButtonText" alerttype="bind:notification.alerttype" on-ok="notification.onOk()"
+        on-close="notification.onClose()"></wm-alertdialog>
 </wm-page>

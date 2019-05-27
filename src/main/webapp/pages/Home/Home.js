@@ -1,3 +1,11 @@
+import Raven from 'raven-js';
+
+Sentry.init({
+    dsn: 'https://083660f5c987405d9d661ce7f43a3906@sentry.io/1468633'
+});
+
+
+
 /*
  * Use App.getDependency for Dependency Injection
  * eg: var DialogService = App.getDependency('DialogService');

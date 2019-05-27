@@ -16,6 +16,7 @@ Page.onReady = function() {
      */
 };
 
-Page.button1Click = function($event, widget) {
+Page.loginButtonClick = function($event, widget) {
     alert("Account created Successfully! Check the mail for login credentials");
-};
+    window.location.href = '#/Login';
+}
